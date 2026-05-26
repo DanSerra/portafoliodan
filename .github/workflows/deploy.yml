@@ -1,0 +1,38 @@
+name: Deploy to AWS S3
+
+on:
+  push:
+    # El asterisco asegura que CUALQUIER rama dispare este workflow
+    branches:
+      - '**'
+
+permissions:
+  id-token: write # Requerido para OIDC
+  contents: read # Requerido para clonar el repositorio
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1 # Cambia esto por tu región de AWS
+
+      # --- DESPLIEGUE A PREPROD (Se ejecuta SIEMPRE para cualquier rama) ---
+      - name: Sync to Preprod S3 Bucket
+        run: |
+          echo "Desplegando la rama [${{ github.ref_name }}] en PREPROD"
+          aws s3 sync . s3://${{ secrets.S3_BUCKET_PREPROD }} --exclude ".git/*" --exclude ".github/*" --delete
+
+      # --- DESPLIEGUE A PROD (Solo se ejecuta si la rama actual es main) ---
+      - name: Sync to Prod S3 Bucket
+        if: github.ref_name == 'main'
+        run: |
+          echo "Desplegando la rama [main] en PRODUCCIÓN"
+          aws s3 sync . s3://${{ secrets.S3_BUCKET_PROD }} --exclude ".git/*" --exclude ".github/*" --delete

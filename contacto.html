@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto - Daniela Serrano Product Designer. Hablemos sobre tu proyecto.">
+  <title>Contacto | Daniela Serrano</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <a href="index.html" class="navbar-logo" aria-label="Inicio"><img src="images/logo_dan_1-03-01.png" alt="Daniela Serrano" class="navbar-logo-default"><img src="images/logo_dan_1-01.png" alt="" class="navbar-logo-hover" aria-hidden="true"><span style="display: none;">DanSer</span></a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>¿Buscas una Product Designer para tu proyecto? Me encantaría conocerlo.</p>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <div class="grid">
+          <div class="contact-content">
+            <h2>Hablemos</h2>
+            <p class="contact-text">¿Tienes un proyecto en mente? ¿Necesitas ayuda definiendo la estrategia de producto? Escríbeme y platiquemos.</p>
+            <div class="contact-links">
+              <a href="mailto:hello@danserrano.design">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7L10 12L18 7" stroke="currentColor" stroke-width="1.5"/></svg>
+                hello@danserrano.design
+              </a>
+              <a href="https://www.linkedin.com/in/danielaserranorosas/" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 10V14M7 8V7M10 14V10M13 10V14M13 9C13 8.5 12.5 8 12 8C11.5 8 11 8.5 11 9C11 9.5 11.5 10 12 10C12.5 10 13 10.5 13 11C13 11.5 12.5 12 12 12C11.5 12 11 12 11 12V14" stroke="currentColor" stroke-width="1.5"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" action="php/contactfrom.php" method="POST">
+            <div class="form-success" id="form-success">Mensaje enviado correctamente. Te contactaré pronto.</div>
+            <div class="form-error" id="form-error">Error al enviar. Intenta de nuevo.</div>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Daniela Serrano. Product Designer.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="3" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 9V12M7 7V7.01M11 12V9M11 7V7.01M7 9C7 8 7 7 8 7C9 7 9 8 9 9C9 10 8 10 7 10M11 9C11 8 11 7 12 7C13 7 13 8 13 9C13 10 12 10 11 10" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
