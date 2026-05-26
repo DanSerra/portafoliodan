@@ -214,7 +214,7 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {top: 10px;
 
 /*===== main ===*/
 
-main[role="main-home-wrapper"],main[role="main-inner-wrapper"] { padding-bottom:90px}
+main[role="main-home-wrapper"],main[role="main-inner-wrapper"] { padding-bottom:90px; background-color:#86895d;}
 
 main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:41px}
 
