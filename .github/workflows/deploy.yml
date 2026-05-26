@@ -30,9 +30,9 @@ jobs:
           echo "Desplegando la rama [${{ github.ref_name }}] en PREPROD"
           aws s3 sync . s3://${{ secrets.S3_BUCKET_PREPROD }} --exclude ".git/*" --exclude ".github/*" --delete
 
-      # --- DESPLIEGUE A PROD (Solo se ejecuta si la rama actual es main) ---
+      # --- DESPLIEGUE A PROD (Solo se ejecuta si la rama actual es master) ---
       - name: Sync to Prod S3 Bucket
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'master'
         run: |
-          echo "Desplegando la rama [main] en PRODUCCIÓN"
+          echo "Desplegando la rama [master] en PRODUCCIÓN"
           aws s3 sync . s3://${{ secrets.S3_BUCKET_PROD }} --exclude ".git/*" --exclude ".github/*" --delete
