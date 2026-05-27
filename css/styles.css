@@ -2,16 +2,16 @@
 
 :root {
   /* Colors */
-  --color-primary: #7C6A92;         /* Editorial purple - headings */
+  --color-primary: #6F5D85;         /* Editorial purple - headings */
   --color-primary-light: #9B87B0;  /* Lighter purple */
-  --color-accent: #D98A5F;         /* Warm orange accessible - CTA/buttons */
-  --color-accent-hover: #C96A2B;   /* Burnt orange - hover/highlights */
+  --color-accent: #B05016;         /* Burnt orange accessible - CTA/buttons */
+  --color-accent-hover: #8E3A10;   /* Darker burnt orange - hover/highlights */
   --color-surface: #F6F1E8;        /* Warm cream - main background */
   --color-surface-alt: #EFE9DE;     /* Slightly deeper cream - secondary backgrounds */
   --color-border: #E0D9CE;          /* Warm light gray - borders/dividers */
   --color-text: #1E1E1B;           /* Near-black - main text */
   --color-text-muted: #3A3A35;     /* Dark warm gray - secondary text */
-  --color-text-light: #B7B1AA;     /* Smoke gray - subtle/decorative text */
+  --color-text-light: #6B655F;     /* Warm medium gray - subtle/decorative text */
   --color-success: #10b981;
   --color-error: #ef4444;
 
@@ -221,7 +221,7 @@ p:last-child {
 
 .btn-primary {
   background-color: var(--color-accent);
-  color: var(--color-surface);
+  color: #FFFFFF;
 }
 
 .btn-primary:hover {
@@ -413,11 +413,26 @@ p:last-child {
 
 /* Hero */
 .hero {
+  position: relative;
   padding-top: calc(var(--header-height) + var(--spacing-3xl));
   padding-bottom: var(--spacing-3xl);
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+}
+
+/* Soft atmospheric fade at the bottom of hero — blends into cream section below */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--color-surface-alt) 100%);
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -439,10 +454,11 @@ p:last-child {
 }
 
 .hero-name {
-  color: var(--color-accent);
-  font-family: var(--font-family-heading);
+  color: var(--color-surface);
+  font-family: var(--font-family);
   font-size: var(--text-h3);
-  line-height: 1;
+  line-height: 1.15;
+  font-weight: 400;
 }
 
 .hero-title {
@@ -570,7 +586,7 @@ p:last-child {
   -webkit-backdrop-filter: blur(6px);
   color: #fff;
   font-family: var(--font-family);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -660,7 +676,7 @@ p:last-child {
 
 .bento-card--heading a {
   font-weight: 500;
-  color: var(--color-accent);
+  color: var(--color-primary);
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -741,7 +757,6 @@ p:last-child {
 #proyectos .bento-card--cta p {
   font-size: var(--text-body);
   color: var(--color-surface);
-  opacity: 0.85;
   margin-bottom: var(--spacing-lg);
 }
 
@@ -859,7 +874,7 @@ p:last-child {
 .proyecto-card-tag {
   display: inline-block;
   font-family: var(--font-family);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -917,13 +932,28 @@ p:last-child {
   font-size: var(--text-h2);
   font-weight: 600;
   line-height: var(--leading-h2);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 /* --- Size modifiers --- */
 .proyecto-card--large {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+/* --- Disabled / coming-soon state --- */
+.proyecto-card--disabled {
+  position: relative;
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
+}
+
+.proyecto-card--disabled:hover {
+  transform: none;
+  box-shadow:
+    0 1px 3px rgba(30,30,27,0.04),
+    0 4px 12px rgba(30,30,27,0.03);
 }
 
 /* About Section */
