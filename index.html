@@ -9,9 +9,10 @@
   <link rel="icon" type="image/png" href="images/logo_dan_1-03-01.png">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><img src="images/logo_dan_1-03-01.png" alt="Daniela Serrano" class="navbar-logo-default"><img src="images/logo_dan_1-01.png" alt="" class="navbar-logo-hover" aria-hidden="true"><span style="display: none;">DanSer</span></a>
+      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
 <ul class="navbar-nav">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
@@ -33,10 +34,11 @@
     <a href="contacto.html">Contacto</a>
   </div>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="container">
-        <div class="grid">
+        <div class="hero-card">
+          <div class="hero-card-overlay"></div>
           <div class="hero-content">
             <h1 class="animate-fade-in-up">
               <span class="hero-name">Daniela Serrano</span>
@@ -68,10 +70,9 @@
           <!-- Featured: Salud -->
           <div class="bento-card bento-card--featured">
             <a href="proyecto-salud-detalle.html">
-              <div class="bento-card-image"><img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Digital Salud Integral" style="width:100%;height:100%;object-fit:cover;"></div>
+              <div class="bento-card-image"><img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Unificada Gastos Médicos" style="width:100%;height:100%;object-fit:cover;"></div>
               <div class="bento-card-content">
-                <h3 class="bento-card-title">Experiencia Digital Salud Integral</h3>
-                <p class="bento-card-context">Estrategia para la unificación del ecosistema digital para pólizas integrales de salud</p>
+                <h3 class="bento-card-title">Experiencia Unificada Gastos Médicos</h3>
                 <div class="bento-card-meta">
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -88,10 +89,9 @@
 
           <!-- Atención -->
           <div class="bento-card bento-card--disabled">
-            <div class="bento-card-image"></div>
+            <div class="bento-card-image"><img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida"></div>
             <div class="bento-card-content">
               <h3 class="bento-card-title">Estrategia de Atención Híbrida</h3>
-              <p class="bento-card-context">Modelo de atención conversacional híbrido (chatbot + atención humana)</p>
               <div class="bento-card-meta">
                 <span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -108,10 +108,9 @@
 
           <!-- Espacio -->
           <div class="bento-card bento-card--disabled">
-            <div class="bento-card-image"></div>
+            <div class="bento-card-image"><img src="images/espacio/espacio-1.png" alt="Administrador de Interacciones"></div>
             <div class="bento-card-content">
-              <h3 class="bento-card-title">Espacio de Trabajo</h3>
-              <p class="bento-card-context">Herramienta de trazabilidad para Contact Center</p>
+              <h3 class="bento-card-title">Administrador de Interacciones</h3>
               <div class="bento-card-meta">
                 <span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -126,7 +125,7 @@
             <span class="bento-card-badge">Próximamente</span>
           </div>
 
-          <!-- About -->
+          <!--
           <div class="bento-card bento-card--about">
             <h2>Enfoque sistémico</h2>
             <p>Más de 7 años diseñando productos digitales que conectan negocio, usuarios y tecnología. Creo en el diseño como herramienta estratégica para generar valor sostenible.</p>
@@ -139,13 +138,15 @@
               <span class="tag">Accesibilidad</span>
             </div>
           </div>
+          -->
 
-          <!-- CTA -->
+          <!--
           <a href="contacto.html" class="bento-card bento-card--cta">
             <h2>Hablemos</h2>
             <p>¿Buscas una Product Designer que entienda la complejidad de tu producto? Me encantaría conocer tu proyecto.</p>
             <span class="btn btn-ghost" style="border: 2px solid; border-radius: var(--radius-md); padding: var(--spacing-md) var(--spacing-xl); font-weight: 500;">Contáctame</span>
           </a>
+          -->
         </div>
       </div>
     </section>

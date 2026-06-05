@@ -9,9 +9,10 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><img src="images/logo_dan_1-03-01.png" alt="Daniela Serrano" class="navbar-logo-default"><img src="images/logo_dan_1-01.png" alt="" class="navbar-logo-hover" aria-hidden="true"><span style="display: none;">DanSer</span></a>
+      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="proyectos.html" class="active">Proyectos</a></li>
@@ -33,7 +34,7 @@
     <a href="contacto.html">Contacto</a>
   </div>
 
-  <main>
+  <main id="main-content">
     <header class="page-header">
       <div class="container">
         <h1>Proyectos</h1>
@@ -54,12 +55,11 @@
           <div class="proyecto-card proyecto-card--large">
             <a href="proyecto-salud-detalle.html" class="proyecto-card-link">
               <div class="proyecto-card-image">
-                <img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Digital Salud Integral" loading="lazy">
+                <img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Unificada Gastos Médicos" loading="lazy">
               </div>
               <div class="proyecto-card-content">
                 <span class="proyecto-card-tag">UX Lead</span>
-                <h3 class="proyecto-card-title">Experiencia Digital Salud Integral</h3>
-                <p class="proyecto-card-desc">Estrategia para la unificación del ecosistema digital para pólizas integrales de salud</p>
+                <h3 class="proyecto-card-title">Experiencia Unificada Gastos Médicos</h3>
                 <!-- <span class="proyecto-card-metric">+45% engagement</span> -->
               </div>
             </a>
@@ -67,10 +67,12 @@
 
           <!-- Atención -->
           <div class="proyecto-card proyecto-card--disabled">
+            <div class="proyecto-card-image">
+              <img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida" loading="lazy">
+            </div>
             <div class="proyecto-card-content">
               <span class="proyecto-card-tag">Product Designer</span>
               <h3 class="proyecto-card-title">Estrategia de Atención Híbrida</h3>
-              <p class="proyecto-card-desc">Modelo de atención conversacional híbrido (chatbot + atención humana)</p>
               <!-- <span class="proyecto-card-metric">+60% conversiones</span> -->
             </div>
             <span class="bento-card-badge">Próximamente</span>
@@ -78,10 +80,12 @@
 
           <!-- Espacio -->
           <div class="proyecto-card proyecto-card--disabled">
+            <div class="proyecto-card-image">
+              <img src="images/espacio/espacio-1.png" alt="Administrador de Interacciones" loading="lazy">
+            </div>
             <div class="proyecto-card-content">
               <span class="proyecto-card-tag">Product Designer</span>
-              <h3 class="proyecto-card-title">Espacio de Trabajo</h3>
-              <p class="proyecto-card-desc">Herramienta de trazabilidad para Contact Center</p>
+              <h3 class="proyecto-card-title">Administrador de Interacciones</h3>
               <!-- <span class="proyecto-card-metric">WCAG AAA</span> -->
             </div>
             <span class="bento-card-badge">Próximamente</span>
@@ -92,30 +96,8 @@
             <h2>Branding y editorial</h2>
           </div>
 
-          <!-- Riev (dominant) -->
-          <div class="proyecto-card proyecto-card--large proyecto-card--disabled">
-            <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title">Riev</h3>
-              <p class="proyecto-card-desc">Página y branding para agencia educativa</p>
-              <!-- <span class="proyecto-card-metric">+80% leads</span> -->
-            </div>
-            <span class="bento-card-badge">Próximamente</span>
-          </div>
-
-          <!-- Kanji -->
-          <div class="proyecto-card proyecto-card--disabled">
-            <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title">Kanji</h3>
-              <p class="proyecto-card-desc">Página para agencia de investigación de mercado</p>
-              <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
-            </div>
-            <span class="bento-card-badge">Próximamente</span>
-          </div>
-
-          <!-- Slot -->
-          <div class="proyecto-card">
+          <!-- Slot (dominant) -->
+          <div class="proyecto-card proyecto-card--large">
             <a href="proyecto-slot-detalle.html" class="proyecto-card-link">
               <div class="proyecto-card-image">
                 <img src="images/home-images/slot5.png" alt="Slot" loading="lazy">
@@ -123,10 +105,29 @@
               <div class="proyecto-card-content">
                 <span class="proyecto-card-tag">Brand Designer</span>
                 <h3 class="proyecto-card-title">Slot</h3>
-                <p class="proyecto-card-desc">Branding para estudio de arquitectura</p>
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
             </a>
+          </div>
+
+          <!-- Kanji -->
+          <div class="proyecto-card proyecto-card--disabled">
+            <div class="proyecto-card-content">
+              <span class="proyecto-card-tag">Visual Designer</span>
+              <h3 class="proyecto-card-title">Kanji</h3>
+              <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
+            </div>
+            <span class="bento-card-badge">Próximamente</span>
+          </div>
+
+          <!-- Riev -->
+          <div class="proyecto-card proyecto-card--disabled">
+            <div class="proyecto-card-content">
+              <span class="proyecto-card-tag">Visual Designer</span>
+              <h3 class="proyecto-card-title">Riev</h3>
+              <!-- <span class="proyecto-card-metric">+80% leads</span> -->
+            </div>
+            <span class="bento-card-badge">Próximamente</span>
           </div>
 
           <!-- Diseño de exposiciones -->
@@ -143,7 +144,6 @@
               <div class="proyecto-card-content">
                 <span class="proyecto-card-tag">Diseñador de exposiciones</span>
                 <h3 class="proyecto-card-title">yo.contenido</h3>
-                <p class="proyecto-card-desc">Proyecto curatorial</p>
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
             </a>
@@ -158,7 +158,7 @@
               <div class="proyecto-card-content">
                 <span class="proyecto-card-tag">Diseñador de exposiciones</span>
                 <h3 class="proyecto-card-title">Nacimiento</h3>
-                <p class="proyecto-card-desc">Proyecto curatorial</p>
+                
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
             </a>
