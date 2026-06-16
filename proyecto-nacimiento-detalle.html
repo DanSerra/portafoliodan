@@ -7,19 +7,27 @@
   <title>Nacimiento | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/proyecto-nacimiento-detalle.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/proyecto-nacimiento-detalle.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,10 +36,15 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
@@ -41,23 +54,23 @@
           <aside class="case-study-sidebar">
             <a href="proyectos.html" class="case-study-back">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Volver
+              <span data-i18n="btn.volver">Volver</span>
             </a>
             <nav class="case-study-toc">
-              <p class="case-study-toc-label">En esta página</p>
+              <p class="case-study-toc-label" data-i18n="detail.en-pagina">En esta página</p>
               <ul class="case-study-toc-list">
-                <li><a href="#descripcion">Descripción</a></li>
-                <li><a href="#desafio">Desafío</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#resultado">Resultado</a></li>
+                <li><a href="#descripcion" data-i18n="detail.desc">Descripción</a></li>
+                <li><a href="#desafio" data-i18n="detail.desafio">Desafío</a></li>
+                <li><a href="#proceso" data-i18n="detail.proceso">Proceso</a></li>
+                <li><a href="#resultado" data-i18n="detail.resultado">Resultado</a></li>
               </ul>
             </nav>
           </aside>
 
           <article class="case-study-main">
-            <p class="case-study-label reveal reveal-delay-1">Caso de estudio</p>
-            <h1 class="case-study-title reveal reveal-delay-2">Nacimiento</h1>
-            <p class="case-study-description reveal reveal-delay-3">Proyecto curatorial</p>
+            <p class="case-study-label reveal reveal-delay-1" data-i18n="detail.caso">Caso de estudio</p>
+            <h1 class="case-study-title reveal reveal-delay-2" data-i18n="title.nac">Nacimiento</h1>
+            <p class="case-study-description reveal reveal-delay-3" data-i18n="nac.desc-sub">Proyecto curatorial</p>
 
             <div class="case-study-hero reveal reveal-delay-4">
               <img src="images/nacimiento/IMG_20131210_135344.jpg" alt="Nacimiento" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -65,54 +78,54 @@
 
             <div class="case-study-meta-grid reveal">
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Rol</span>
-                <span class="case-study-meta-item-value">Diseñador de exposiciones</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.rol">Rol</span>
+                <span class="case-study-meta-item-value" data-i18n="nac.rol">Diseñador de exposiciones</span>
               </div>
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Duración</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.duracion">Duración</span>
                 <span class="case-study-meta-item-value">4 meses</span>
               </div>
             </div>
 
             <section class="cs-section reveal" id="descripcion">
-              <h2>Descripción breve</h2>
-              <p>Participé en el montaje y producción visual de la exposición Nacimiento, momentos en la memoria, presentada en el Museo Nacional de Culturas Populares. La exposición mostró el "Nacimiento Amparo Espinosa Rugarcía", una colección histórica de 1,100 piezas de barro policromado del artesano Felipe Nieva, integrando una propuesta museográfica contemporánea con una pieza de arte sonoro envolvente.</p>
+              <h2 data-i18n="detail.desc-breve">Descripción breve</h2>
+              <p data-i18n-html="nac.desc">Participé en el montaje y producción visual de la exposición Nacimiento, momentos en la memoria, presentada en el Museo Nacional de Culturas Populares. La exposición mostró el "Nacimiento Amparo Espinosa Rugarcía", una colección histórica de 1,100 piezas de barro policromado del artesano Felipe Nieva, integrando una propuesta museográfica contemporánea con una pieza de arte sonoro envolvente.</p>
             </section>
 
             <section class="cs-section reveal" id="desafio">
-              <h2>Desafío</h2>
-              <p>El reto central consistió en la gestión espacial y visual de una colección masiva de 1,100 piezas de formato pequeño, asegurando que la instalación museográfica no solo fuera funcional para una exposición de esta escala, sino que también lograra una lectura contemporánea y coherente. Fue necesario armonizar el valor histórico de la colección con elementos gráficos modernos y una experiencia sensorial (arte sonoro).</p>
+              <h2 data-i18n="detail.desafio">Desafío</h2>
+              <p data-i18n-html="nac.desafio">El reto central consistió en la gestión espacial y visual de una colección masiva de 1,100 piezas de formato pequeño, asegurando que la instalación museográfica no solo fuera funcional para una exposición de esta escala, sino que también lograra una lectura contemporánea y coherente. Fue necesario armonizar el valor histórico de la colección con elementos gráficos modernos y una experiencia sensorial (arte sonoro).</p>
             </section>
 
             <section class="cs-section reveal" id="proceso">
-              <h2>Proceso</h2>
-              <p>Mi labor se centró en la ejecución técnica y la coordinación operativa para garantizar la integridad visual del proyecto:</p>
-              <p><strong>Sembrado y Montaje:</strong> Colaboré activamente en el sembrado museográfico, definiendo la disposición espacial de las figuras para optimizar el recorrido y la visibilidad de la colección.</p>
-              <p><strong>Producción Visual:</strong> Participé en la implementación de la gráfica de sala y la producción de materiales visuales de soporte que guiaron la narrativa del recorrido.</p>
-              <p><strong>Gestión Operativa:</strong> Coordiné tareas de producción gráfica y preparación técnica de imágenes, asegurando que cada elemento cumpliera con la calidad e identidad visual establecida.</p>
-              <p><strong>Colaboración Interdisciplinaria:</strong> Trabajé en estrecha colaboración con el equipo de curaduría y el personal del museo para asegurar la cohesión entre el discurso curatorial, los elementos sonoros y la implementación espacial dentro del recinto.</p>
+              <h2 data-i18n="detail.proceso">Proceso</h2>
+              <p data-i18n-html="nac.proceso.intro">Mi labor se centró en la ejecución técnica y la coordinación operativa para garantizar la integridad visual del proyecto:</p>
+              <p data-i18n-html="nac.proceso.p1"><strong>Sembrado y Montaje:</strong> Colaboré activamente en el sembrado museográfico, definiendo la disposición espacial de las figuras para optimizar el recorrido y la visibilidad de la colección.</p>
+              <p data-i18n-html="nac.proceso.p2"><strong>Producción Visual:</strong> Participé en la implementación de la gráfica de sala y la producción de materiales visuales de soporte que guiaron la narrativa del recorrido.</p>
+              <p data-i18n-html="nac.proceso.p3"><strong>Gestión Operativa:</strong> Coordiné tareas de producción gráfica y preparación técnica de imágenes, asegurando que cada elemento cumpliera con la calidad e identidad visual establecida.</p>
+              <p data-i18n-html="nac.proceso.p4"><strong>Colaboración Interdisciplinaria:</strong> Trabajé en estrecha colaboración con el equipo de curaduría y el personal del museo para asegurar la cohesión entre el discurso curatorial, los elementos sonoros y la implementación espacial dentro del recinto.</p>
             </section>
 
             <section class="cs-section reveal" id="resultado">
-              <h2>Resultado</h2>
-              <p><strong>Ejecución Técnica:</strong> Se logró la instalación exitosa de 1,100 piezas de barro policromado, garantizando su preservación y correcta apreciación estética.</p>
-              <p><strong>Coherencia Espacial:</strong> La implementación de la gráfica de sala y los materiales de soporte resultó en un recorrido fluido que facilitó una lectura contemporánea de una colección del siglo XX.</p>
-              <p style="margin-top: var(--spacing-lg);"><a href="https://www.amma.art/exhibitions/9-nacimiento-momentos-en-la-memoria-2013-museo-nacional-de-culturas-populares-ciudad-de-mexico/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Enlace relacionado →</a></p>
+              <h2 data-i18n="detail.resultado">Resultado</h2>
+              <p data-i18n-html="nac.resultado.p1"><strong>Ejecución Técnica:</strong> Se logró la instalación exitosa de 1,100 piezas de barro policromado, garantizando su preservación y correcta apreciación estética.</p>
+              <p data-i18n-html="nac.resultado.p2"><strong>Coherencia Espacial:</strong> La implementación de la gráfica de sala y los materiales de soporte resultó en un recorrido fluido que facilitó una lectura contemporánea de una colección del siglo XX.</p>
+              <p style="margin-top: var(--spacing-lg);"><a href="https://www.amma.art/exhibitions/9-nacimiento-momentos-en-la-memoria-2013-museo-nacional-de-culturas-populares-ciudad-de-mexico/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-i18n="btn.enlace">Enlace relacionado →</a></p>
             </section>
 
             <section class="cs-section reveal">
-              <h2>Habilidades</h2>
+              <h2 data-i18n="detail.habilidades">Habilidades</h2>
               <div class="about-tags">
-                <span class="tag">Montaje y Sembrado Museográfico</span>
-                <span class="tag">Gráfica de Sala</span>
-                <span class="tag">Producción Gráfica de Gran Formato</span>
-                <span class="tag">Edición de fotografía</span>
-                <span class="tag">Coordinación Operativa</span>
+                <span class="tag" data-i18n="skill.montaje">Montaje y Sembrado Museográfico</span>
+                <span class="tag" data-i18n="skill.grafica-sala">Gráfica de Sala</span>
+                <span class="tag" data-i18n="skill.prod-grafica">Producción Gráfica de Gran Formato</span>
+                <span class="tag" data-i18n="skill.foto">Edición de fotografía</span>
+                <span class="tag" data-i18n="skill.coordinacion">Coordinación Operativa</span>
               </div>
             </section>
 
             <section class="cs-section reveal">
-              <h2>Galería</h2>
+              <h2 data-i18n="detail.galeria">Galería</h2>
               <div class="gallery-bento">
                 <img src="images/nacimiento/1415541_10151747094200810_272243819_o.jpg" alt="Nacimiento" style="width: 100%; aspect-ratio: 1; object-fit: cover; grid-column: span 2;">
                 <img src="images/nacimiento/1521497_10151783170725810_1832436549_n.jpg" alt="Nacimiento" style="width: 100%; aspect-ratio: 1; object-fit: cover;">
@@ -134,9 +147,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -144,6 +157,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -7,19 +7,27 @@
   <title>Perfil | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/perfil.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/perfil.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="perfil.html" class="active">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" class="active" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,17 +36,22 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
     <header class="page-header">
       <div class="container">
-        <h1>Perfil</h1>
-        <p> Product Designer con más de 7 años de experiencia creando productos digitales.</p>
+        <h1 data-i18n="perfil.h1">Perfil</h1>
+        <p data-i18n="perfil.subtitle"> Product Designer con más de 7 años de experiencia creando productos digitales.</p>
       </div>
     </header>
 
@@ -46,28 +59,28 @@
       <div class="container">
         <div class="grid">
           <div class="about-content">
-            <h2>Daniela Serrano</h2>
-            <p class="about-text" style="font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: var(--spacing-xl);">Product Designer enfocada en pensamiento sistémico y producto end-to-end. Creo en el diseño como herramienta estratégica para conectar negocio, usuarios y tecnología.</p>
+            <h2 data-i18n="perfil.nombre">Daniela Serrano</h2>
+            <p class="about-text" style="font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: var(--spacing-xl);" data-i18n="perfil.desc">Product Designer enfocada en pensamiento sistémico y producto end-to-end. Creo en el diseño como herramienta estratégica para conectar negocio, usuarios y tecnología.</p>
             
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">Especialidades</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-md);" data-i18n="perfil.especialidades">Especialidades</h3>
             <div class="about-tags" style="margin-bottom: var(--spacing-2xl);">
-              <span class="tag">Discovery continuo</span>
-              <span class="tag">UX/Product Design</span>
-              <span class="tag">Pensamiento sistémico</span>
-              <span class="tag">Service Design</span>
-              <span class="tag">Design Systems</span>
+              <span class="tag" data-i18n="skill.discovery">Discovery continuo</span>
+              <span class="tag" data-i18n="skill.ux-product">UX/Product Design</span>
+              <span class="tag" data-i18n="skill.pensamiento">Pensamiento sistémico</span>
+              <span class="tag" data-i18n="skill.service-design">Service Design</span>
+              <span class="tag" data-i18n="skill.design-systems">Design Systems</span>
             </div>
 
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">Habilidades</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-md);" data-i18n="perfil.habilidades">Habilidades</h3>
             <div class="about-tags">
-              <span class="tag">UX Research</span>
-              <span class="tag">Usability Testing</span>
-              <span class="tag">Information Architecture</span>
-              <span class="tag">Interaction Design</span>
-              <span class="tag">Prototyping</span>
-              <span class="tag">Facilitation</span>
-              <span class="tag">Strategic Thinking</span>
-              <span class="tag">Accesibilidad (WCAG)</span>
+              <span class="tag" data-i18n="skill.ux-research">UX Research</span>
+              <span class="tag" data-i18n="skill.usability">Usability Testing</span>
+              <span class="tag" data-i18n="skill.info-arch">Information Architecture</span>
+              <span class="tag" data-i18n="skill.interaction">Interaction Design</span>
+              <span class="tag" data-i18n="skill.prototyping">Prototyping</span>
+              <span class="tag" data-i18n="skill.facilitation">Facilitation</span>
+              <span class="tag" data-i18n="skill.strategic">Strategic Thinking</span>
+              <span class="tag" data-i18n="skill.accesibilidad">Accesibilidad (WCAG)</span>
             </div>
           </div>
           
@@ -84,7 +97,7 @@
       <div class="container">
         <div class="grid">
           <div style="grid-column: 1 / -1;">
-            <h2 style="margin-bottom: var(--spacing-2xl); text-align: center;">Experiencia</h2>
+            <h2 style="margin-bottom: var(--spacing-2xl); text-align: center;" data-i18n="perfil.experiencia">Experiencia</h2>
           </div>
           
           <div style="grid-column: 1 / -1; display: grid; gap: var(--spacing-xl);">
@@ -134,7 +147,7 @@
           </div>
 
           <div style="grid-column: 1 / -1; text-align: center; margin-top: var(--spacing-2xl);">
-            <a href="docs/CV_Daniela_Serrano _SeniorProductDesigner.pdf" class="btn btn-primary" download>Descargar CV</a>
+            <a href="docs/CV_Daniela_Serrano _SeniorProductDesigner.pdf" class="btn btn-primary" download data-i18n="btn.descargar">Descargar CV</a>
           </div>
         </div>
       </div>
@@ -144,9 +157,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -154,6 +167,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -7,19 +7,27 @@
   <title>Contacto | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/contacto.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/contacto.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" class="active" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,17 +36,22 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
     <header class="page-header">
       <div class="container">
-        <h1>Contacto</h1>
-        <p>¿Buscas una Product Designer para tu proyecto? Me encantaría conocerlo.</p>
+        <h1 data-i18n="contacto.h1">Contacto</h1>
+        <p data-i18n="contacto.subtitle">¿Buscas una Product Designer para tu proyecto? Me encantaría conocerlo.</p>
       </div>
     </header>
 
@@ -46,8 +59,8 @@
       <div class="container">
         <div class="grid">
           <div class="contact-content">
-            <h2>Hablemos</h2>
-            <p class="contact-text">¿Tienes un proyecto en mente? ¿Necesitas ayuda definiendo la estrategia de producto? Escríbeme y platiquemos.</p>
+            <h2 data-i18n="hablemos.titulo">Hablemos</h2>
+            <p class="contact-text" data-i18n="contacto.desc">¿Tienes un proyecto en mente? ¿Necesitas ayuda definiendo la estrategia de producto? Escríbeme y platiquemos.</p>
             <div class="contact-links">
               <a href="mailto:serrano.r.daniela@gmail.com">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7L10 12L18 7" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -60,21 +73,21 @@
             </div>
           </div>
           <form class="contact-form" id="contact-form" action="php/contactfrom.php" method="POST">
-            <div class="form-success" id="form-success">Mensaje enviado correctamente. Te contactaré pronto.</div>
-            <div class="form-error" id="form-error">Error al enviar. Intenta de nuevo.</div>
+            <div class="form-success" id="form-success" data-i18n="form.success">Mensaje enviado correctamente. Te contactaré pronto.</div>
+            <div class="form-error" id="form-error" data-i18n="form.error">Error al enviar. Intenta de nuevo.</div>
             <div class="form-group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+              <label for="name" data-i18n="label.nombre">Nombre</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="placeholder.nombre" placeholder="Tu nombre" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+              <label for="email" data-i18n="label.email">Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="placeholder.email" placeholder="tu@email.com" required>
             </div>
             <div class="form-group">
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+              <label for="message" data-i18n="label.mensaje">Mensaje</label>
+              <textarea id="message" name="message" data-i18n-placeholder="placeholder.mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <button type="submit" class="btn btn-primary" data-i18n="btn.enviar">Enviar mensaje</button>
           </form>
         </div>
       </div>
@@ -84,9 +97,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -94,6 +107,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

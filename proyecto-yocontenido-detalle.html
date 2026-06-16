@@ -7,19 +7,27 @@
   <title>yo.contenido | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/proyecto-yocontenido-detalle.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/proyecto-yocontenido-detalle.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,10 +36,15 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
@@ -41,23 +54,23 @@
           <aside class="case-study-sidebar">
             <a href="proyectos.html" class="case-study-back">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Volver
+              <span data-i18n="btn.volver">Volver</span>
             </a>
             <nav class="case-study-toc">
-              <p class="case-study-toc-label">En esta página</p>
+              <p class="case-study-toc-label" data-i18n="detail.en-pagina">En esta página</p>
               <ul class="case-study-toc-list">
-                <li><a href="#descripcion">Descripción</a></li>
-                <li><a href="#desafio">Desafío</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#resultado">Resultado</a></li>
+                <li><a href="#descripcion" data-i18n="detail.desc">Descripción</a></li>
+                <li><a href="#desafio" data-i18n="detail.desafio">Desafío</a></li>
+                <li><a href="#proceso" data-i18n="detail.proceso">Proceso</a></li>
+                <li><a href="#resultado" data-i18n="detail.resultado">Resultado</a></li>
               </ul>
             </nav>
           </aside>
 
           <article class="case-study-main">
-            <p class="case-study-label reveal reveal-delay-1">Caso de estudio</p>
-            <h1 class="case-study-title reveal reveal-delay-2">yo.contenido</h1>
-            <p class="case-study-description reveal reveal-delay-3">Proyecto curatorial</p>
+            <p class="case-study-label reveal reveal-delay-1" data-i18n="detail.caso">Caso de estudio</p>
+            <h1 class="case-study-title reveal reveal-delay-2" data-i18n="title.yoc">yo.contenido</h1>
+            <p class="case-study-description reveal reveal-delay-3" data-i18n="yoc.desc-sub">Proyecto curatorial</p>
 
             <div class="case-study-hero reveal reveal-delay-4">
               <img src="images/yocontenido/fachada_yo_luis.jpg" alt="Yo Contenido" style="width: 100%; height: 100%; object-fit: cover;">
@@ -65,53 +78,53 @@
 
             <div class="case-study-meta-grid reveal">
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Rol</span>
-                <span class="case-study-meta-item-value">Diseñador de exposiciones</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.rol">Rol</span>
+                <span class="case-study-meta-item-value" data-i18n="yoc.rol">Diseñador de exposiciones</span>
               </div>
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Duración</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.duracion">Duración</span>
                 <span class="case-study-meta-item-value">4 meses</span>
               </div>
             </div>
 
             <section class="cs-section reveal" id="descripcion">
-              <h2>Descripción breve</h2>
-              <p>Responsable de la identidad visual para la exposición colectiva yo.contenido, presentada en el marco del Festival Entijuanarte en Tijuana. El proyecto integró el trabajo de 33 artistas nacionales bajo una narrativa curatorial sobre la relación del individuo con su entorno en el contexto actual de México. La labor abarcó desde el desarrollo del sistema gráfico hasta la supervisión técnica de la instalación en sala.</p>
+              <h2 data-i18n="detail.desc-breve">Descripción breve</h2>
+              <p data-i18n-html="yoc.desc">Responsable de la identidad visual para la exposición colectiva yo.contenido, presentada en el marco del Festival Entijuanarte en Tijuana. El proyecto integró el trabajo de 33 artistas nacionales bajo una narrativa curatorial sobre la relación del individuo con su entorno en el contexto actual de México. La labor abarcó desde el desarrollo del sistema gráfico hasta la supervisión técnica de la instalación en sala.</p>
             </section>
 
             <section class="cs-section reveal" id="desafio">
-              <h2>Desafío</h2>
-              <p>Articular una identidad visual coherente y una experiencia museográfica que lograra unificar la diversidad de obra de 33 artistas diferentes. El reto radicó en trasladar un concepto curatorial complejo —el "yo" frente al entorno— a un lenguaje visual claro y funcional, garantizando que tanto la señalética, los textos curatoriales como los materiales de difusión comunicaran eficazmente la propuesta temática dentro de la dinámica de un festival masivo.</p>
+              <h2 data-i18n="detail.desafio">Desafío</h2>
+              <p data-i18n-html="yoc.desafio">Articular una identidad visual coherente y una experiencia museográfica que lograra unificar la diversidad de obra de 33 artistas diferentes. El reto radicó en trasladar un concepto curatorial complejo —el "yo" frente al entorno— a un lenguaje visual claro y funcional, garantizando que tanto la señalética, los textos curatoriales como los materiales de difusión comunicaran eficazmente la propuesta temática dentro de la dinámica de un festival masivo.</p>
             </section>
 
             <section class="cs-section reveal" id="proceso">
-              <h2>Proceso</h2>
-              <p><strong>Desarrollo de Identidad:</strong> Creación del sistema visual y materiales editoriales que dieron cohesión a la exposición, incluyendo gráfica de sala, cédulas y materiales de difusión digital e impresa.</p>
-              <p><strong>Diseño Museográfico:</strong> Colaboración directa con el equipo de curaduría para el sembrado de obra y la implementación visual dentro del recinto, asegurando que la narrativa gráfica guiara al visitante.</p>
-              <p><strong>Comunicación Interna y Difusión:</strong> Desarrollo de activos institucionales (papelería, banners, postales) para fortalecer la imagen profesional del proyecto.</p>
-              <p><strong>Supervisión de Instalación:</strong> Coordinación técnica en el recinto para la correcta ejecución de los elementos visuales en el espacio expositivo.</p>
+              <h2 data-i18n="detail.proceso">Proceso</h2>
+              <p data-i18n-html="yoc.proceso.p1"><strong>Desarrollo de Identidad:</strong> Creación del sistema visual y materiales editoriales que dieron cohesión a la exposición, incluyendo gráfica de sala, cédulas y materiales de difusión digital e impresa.</p>
+              <p data-i18n-html="yoc.proceso.p2"><strong>Diseño Museográfico:</strong> Colaboración directa con el equipo de curaduría para el sembrado de obra y la implementación visual dentro del recinto, asegurando que la narrativa gráfica guiara al visitante.</p>
+              <p data-i18n-html="yoc.proceso.p3"><strong>Comunicación Interna y Difusión:</strong> Desarrollo de activos institucionales (papelería, banners, postales) para fortalecer la imagen profesional del proyecto.</p>
+              <p data-i18n-html="yoc.proceso.p4"><strong>Supervisión de Instalación:</strong> Coordinación técnica en el recinto para la correcta ejecución de los elementos visuales en el espacio expositivo.</p>
             </section>
 
             <section class="cs-section reveal" id="resultado">
-              <h2>Resultados</h2>
-              <p><strong>Ejecución impecable:</strong> Se completó el desarrollo e implementación visual dentro de los tiempos establecidos, cumpliendo con la exigencia logística del festival.</p>
-              <p><strong>Satisfacción del Cliente/Stakeholders:</strong> La propuesta visual y la museografía fueron recibidas con alto nivel de satisfacción por parte del equipo organizador del Festival Entijuanarte, validando la calidad del diseño y la capacidad de gestión del proyecto.</p>
-              <p><strong>Cohesión Narrativa:</strong> Se logró una unificación visual exitosa para los 33 artistas participantes, permitiendo que la narrativa curatorial fuera legible y atractiva.</p>
+              <h2 data-i18n="detail.resultados">Resultados</h2>
+              <p data-i18n-html="yoc.resultado.p1"><strong>Ejecución impecable:</strong> Se completó el desarrollo e implementación visual dentro de los tiempos establecidos, cumpliendo con la exigencia logística del festival.</p>
+              <p data-i18n-html="yoc.resultado.p2"><strong>Satisfacción del Cliente/Stakeholders:</strong> La propuesta visual y la museografía fueron recibidas con alto nivel de satisfacción por parte del equipo organizador del Festival Entijuanarte, validando la calidad del diseño y la capacidad de gestión del proyecto.</p>
+              <p data-i18n-html="yoc.resultado.p3"><strong>Cohesión Narrativa:</strong> Se logró una unificación visual exitosa para los 33 artistas participantes, permitiendo que la narrativa curatorial fuera legible y atractiva.</p>
             </section>
 
             <section class="cs-section reveal">
-              <h2>Habilidades</h2>
+              <h2 data-i18n="detail.habilidades">Habilidades</h2>
               <div class="about-tags">
-                <span class="tag">Diseño de Identidad Visual</span>
-                <span class="tag">Gráfica de Sala</span>
-                <span class="tag">Diseño de Espacios Expositivos</span>
-                <span class="tag">Comunicación Visual</span>
-                <span class="tag">Gestión de Proyectos Culturales</span>
+                <span class="tag" data-i18n="skill.id-visual">Diseño de Identidad Visual</span>
+                <span class="tag" data-i18n="skill.grafica-sala">Gráfica de Sala</span>
+                <span class="tag" data-i18n="skill.espacios">Diseño de Espacios Expositivos</span>
+                <span class="tag" data-i18n="skill.com-visual">Comunicación Visual</span>
+                <span class="tag" data-i18n="skill.gestion-cultural">Gestión de Proyectos Culturales</span>
               </div>
             </section>
 
             <section class="cs-section reveal">
-              <h2>Galería</h2>
+              <h2 data-i18n="detail.galeria">Galería</h2>
               <div class="gallery-bento">
                 <img src="images/yocontenido/Plano_medias.jpg" alt="Plano medias" style="width: 100%; aspect-ratio: 1; object-fit: cover; grid-column: span 2;">
                 <img src="images/yocontenido/j%20copy.jpg" alt="j copy" style="width: 100%; aspect-ratio: 1; object-fit: cover;">
@@ -138,9 +151,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -148,6 +161,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

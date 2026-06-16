@@ -7,19 +7,27 @@
   <title>Proyectos | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/proyectos.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/proyectos.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,17 +36,22 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
     <header class="page-header">
       <div class="container">
-        <h1>Proyectos</h1>
-        <p>Una selección de casos donde el diseño estratégico generó impacto medible en negocio y usuarios.</p>
+        <h1 data-i18n="proyectos.h1">Proyectos</h1>
+        <p data-i18n="proyectos.subtitle">Una selección de casos donde el diseño estratégico generó impacto medible en negocio y usuarios.</p>
       </div>
     </header>
 
@@ -48,7 +61,7 @@
 
           <!-- Diseño de productos digitales -->
           <div class="proyecto-card proyecto-card--heading">
-            <h2>Diseño de productos digitales</h2>
+            <h2 data-i18n="cat.digital">Diseño de productos digitales</h2>
           </div>
 
           <!-- Salud (dominant) -->
@@ -58,8 +71,8 @@
                 <img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Unificada Gastos Médicos" loading="lazy">
               </div>
               <div class="proyecto-card-content">
-                <span class="proyecto-card-tag">UX Lead</span>
-                <h3 class="proyecto-card-title">Experiencia Unificada Gastos Médicos</h3>
+                <span class="proyecto-card-tag" data-i18n="index.salud.tag">UX Lead</span>
+                <h3 class="proyecto-card-title" data-i18n="title.salud">Experiencia Unificada Gastos Médicos</h3>
                 <!-- <span class="proyecto-card-metric">+45% engagement</span> -->
               </div>
             </a>
@@ -71,11 +84,11 @@
               <img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida" loading="lazy">
             </div>
             <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Product Designer</span>
-              <h3 class="proyecto-card-title">Estrategia de Atención Híbrida</h3>
+              <span class="proyecto-card-tag" data-i18n="index.atencion.tag">Product Designer</span>
+              <h3 class="proyecto-card-title" data-i18n="title.atencion">Estrategia de Atención Híbrida</h3>
               <!-- <span class="proyecto-card-metric">+60% conversiones</span> -->
             </div>
-            <span class="bento-card-badge">Próximamente</span>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
           </div>
 
           <!-- Espacio -->
@@ -84,16 +97,16 @@
               <img src="images/espacio/espacio-1.png" alt="Administrador de Interacciones" loading="lazy">
             </div>
             <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Product Designer</span>
-              <h3 class="proyecto-card-title">Administrador de Interacciones</h3>
+              <span class="proyecto-card-tag" data-i18n="index.espacio.tag">Product Designer</span>
+              <h3 class="proyecto-card-title" data-i18n="title.espacio">Administrador de Interacciones</h3>
               <!-- <span class="proyecto-card-metric">WCAG AAA</span> -->
             </div>
-            <span class="bento-card-badge">Próximamente</span>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
           </div>
 
           <!-- Branding y editorial -->
           <div class="proyecto-card proyecto-card--heading">
-            <h2>Branding y editorial</h2>
+            <h2 data-i18n="cat.branding">Branding y editorial</h2>
           </div>
 
           <!-- Slot (dominant) -->
@@ -103,8 +116,8 @@
                 <img src="images/home-images/slot5.png" alt="Slot" loading="lazy">
               </div>
               <div class="proyecto-card-content">
-                <span class="proyecto-card-tag">Brand Designer</span>
-                <h3 class="proyecto-card-title">Slot</h3>
+                <span class="proyecto-card-tag" data-i18n="slot.rol">Brand &amp; Visual Designer Lead</span>
+                <h3 class="proyecto-card-title" data-i18n="title.slot">Slot</h3>
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
             </a>
@@ -114,25 +127,25 @@
           <div class="proyecto-card proyecto-card--disabled">
             <div class="proyecto-card-content">
               <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title">Kanji</h3>
+              <h3 class="proyecto-card-title" data-i18n="title.kanji">Kanji</h3>
               <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
             </div>
-            <span class="bento-card-badge">Próximamente</span>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
           </div>
 
           <!-- Riev -->
           <div class="proyecto-card proyecto-card--disabled">
             <div class="proyecto-card-content">
               <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title">Riev</h3>
+              <h3 class="proyecto-card-title" data-i18n="title.riev">Riev</h3>
               <!-- <span class="proyecto-card-metric">+80% leads</span> -->
             </div>
-            <span class="bento-card-badge">Próximamente</span>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
           </div>
 
           <!-- Diseño de exposiciones -->
           <div class="proyecto-card proyecto-card--heading">
-            <h2>Diseño de exposiciones</h2>
+            <h2 data-i18n="cat.exposiciones">Diseño de exposiciones</h2>
           </div>
 
           <!-- yo.contenido (dominant) -->
@@ -142,8 +155,8 @@
                 <img src="images/yocontenido/fachda1.jpg" alt="yo.contenido" loading="lazy">
               </div>
               <div class="proyecto-card-content">
-                <span class="proyecto-card-tag">Diseñador de exposiciones</span>
-                <h3 class="proyecto-card-title">yo.contenido</h3>
+                <span class="proyecto-card-tag" data-i18n="yoc.rol">Diseñador de exposiciones</span>
+                <h3 class="proyecto-card-title" data-i18n="title.yoc">yo.contenido</h3>
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
             </a>
@@ -156,8 +169,8 @@
                 <img src="images/nacimiento/IMG_20131210_135344.jpg" alt="Nacimiento" loading="lazy">
               </div>
               <div class="proyecto-card-content">
-                <span class="proyecto-card-tag">Diseñador de exposiciones</span>
-                <h3 class="proyecto-card-title">Nacimiento</h3>
+                <span class="proyecto-card-tag" data-i18n="nac.rol">Diseñador de exposiciones</span>
+                <h3 class="proyecto-card-title" data-i18n="title.nac">Nacimiento</h3>
                 
                 <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
               </div>
@@ -172,9 +185,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -182,6 +195,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

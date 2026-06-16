@@ -7,19 +7,27 @@
   <title>Daniela Serrano | Product Designer</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="images/logo_dan_1-03-01.png">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/index.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/index.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
-<ul class="navbar-nav">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,10 +36,15 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
@@ -41,13 +54,13 @@
           <div class="hero-card-overlay"></div>
           <div class="hero-content">
             <h1 class="animate-fade-in-up">
-              <span class="hero-name">Daniela Serrano</span>
-              <span class="hero-title">Diseñadora de productos digitales</span>
+              <span class="hero-name" data-i18n="hero.name">Daniela Serrano</span>
+              <span class="hero-title" data-i18n="hero.title">Diseñadora de productos digitales</span>
             </h1>
-            <p class="hero-subtitle animate-fade-in-up animate-delay-1" style="display: none;">Articulando soluciones digitales complejas con un enfoque humano y estratégico.</p>
+            <p class="hero-subtitle animate-fade-in-up animate-delay-1" style="display: none;" data-i18n="hero.subtitle">Articulando soluciones digitales complejas con un enfoque humano y estratégico.</p>
             <div class="hero-cta animate-fade-in-up animate-delay-2">
-              <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
-              <a href="docs/CV_Daniela_Serrano _SeniorProductDesigner.pdf" class="btn btn-secondary" download>Descargar CV</a>
+              <a href="proyectos.html" class="btn btn-primary" data-i18n="btn.ver">Ver proyectos</a>
+              <a href="docs/CV_Daniela_Serrano _SeniorProductDesigner.pdf" class="btn btn-secondary" download data-i18n="btn.descargar">Descargar CV</a>
             </div>
           </div>
         </div>
@@ -59,9 +72,9 @@
         <div class="bento-grid">
           <!-- Heading -->
           <div class="bento-card bento-card--heading">
-            <h2>Proyectos</h2>
-            <p>Una selección de casos donde el diseño estratégico generó impacto medible en negocio y usuarios.</p>
-            <a href="proyectos.html">
+            <h2 data-i18n="proyectos.titulo">Proyectos</h2>
+            <p data-i18n="proyectos.desc">Una selección de casos donde el diseño estratégico generó impacto medible en negocio y usuarios.</p>
+            <a href="proyectos.html" data-i18n="btn.ver-todos">
               Ver todos
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -72,11 +85,11 @@
             <a href="proyecto-salud-detalle.html">
               <div class="bento-card-image"><img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Unificada Gastos Médicos" style="width:100%;height:100%;object-fit:cover;"></div>
               <div class="bento-card-content">
-                <h3 class="bento-card-title">Experiencia Unificada Gastos Médicos</h3>
+                <h3 class="bento-card-title" data-i18n="title.salud">Experiencia Unificada Gastos Médicos</h3>
                 <div class="bento-card-meta">
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    UX Lead
+                    <span data-i18n="index.salud.tag">UX Lead</span>
                   </span>
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -91,11 +104,11 @@
           <div class="bento-card bento-card--disabled">
             <div class="bento-card-image"><img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida"></div>
             <div class="bento-card-content">
-              <h3 class="bento-card-title">Estrategia de Atención Híbrida</h3>
+                <h3 class="bento-card-title" data-i18n="title.atencion">Estrategia de Atención Híbrida</h3>
               <div class="bento-card-meta">
                 <span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  Product Designer
+                  <span data-i18n="index.atencion.tag">Product Designer</span>
                 </span>
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -103,18 +116,18 @@
                   </span>
               </div>
             </div>
-            <span class="bento-card-badge">Próximamente</span>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
           </div>
 
           <!-- Espacio -->
           <div class="bento-card bento-card--disabled">
             <div class="bento-card-image"><img src="images/espacio/espacio-1.png" alt="Administrador de Interacciones"></div>
             <div class="bento-card-content">
-              <h3 class="bento-card-title">Administrador de Interacciones</h3>
+                <h3 class="bento-card-title" data-i18n="title.espacio">Administrador de Interacciones</h3>
               <div class="bento-card-meta">
                 <span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 14C2 11.2386 4.23858 9 7 9H9C11.7614 9 14 11.2386 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  Product Designer
+                  <span data-i18n="index.espacio.tag">Product Designer</span>
                 </span>
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -155,8 +168,8 @@
       <div class="container">
         <div class="grid">
           <div class="contact-content">
-            <h2>Hablemos</h2>
-            <p class="contact-text">¿Buscas una Product Designer que entienda la complejidad de tu producto? Me encantaría conocer tu proyecto.</p>
+            <h2 data-i18n="hablemos.titulo">Hablemos</h2>
+            <p class="contact-text" data-i18n="contacto.desc">¿Buscas una Product Designer que entienda la complejidad de tu producto? Me encantaría conocer tu proyecto.</p>
             <div class="contact-links">
               <a href="mailto:serrano.r.daniela@gmail.com">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7L10 12L18 7" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -169,21 +182,21 @@
             </div>
           </div>
           <form class="contact-form" id="contact-form" action="php/contactfrom.php" method="POST">
-            <div class="form-success" id="form-success">Mensaje enviado correctamente. Te contactaré pronto.</div>
-            <div class="form-error" id="form-error">Error al enviar. Intenta de nuevo.</div>
+            <div class="form-success" id="form-success" data-i18n="form.success">Mensaje enviado correctamente. Te contactaré pronto.</div>
+            <div class="form-error" id="form-error" data-i18n="form.error">Error al enviar. Intenta de nuevo.</div>
             <div class="form-group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+              <label for="name" data-i18n="label.nombre">Nombre</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="placeholder.nombre" placeholder="Tu nombre" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+              <label for="email" data-i18n="label.email">Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="placeholder.email" placeholder="tu@email.com" required>
             </div>
             <div class="form-group">
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+              <label for="message" data-i18n="label.mensaje">Mensaje</label>
+              <textarea id="message" name="message" data-i18n-placeholder="placeholder.mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <button type="submit" class="btn btn-primary" data-i18n="btn.enviar">Enviar mensaje</button>
           </form>
         </div>
       </div>
@@ -193,9 +206,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -203,6 +216,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

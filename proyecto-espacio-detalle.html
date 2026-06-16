@@ -7,19 +7,27 @@
   <title>Administrador de Interacciones | Daniela Serrano</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◇</text></svg>">
+  <link rel="alternate" hreflang="es" href="https://danielaserrano.com/proyecto-espacio-detalle.html">
+  <link rel="alternate" hreflang="en" href="https://danielaserrano.com/proyecto-espacio-detalle.html?lang=en">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#main-content" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+  <nav class="navbar" role="navigation" data-i18n-label="nav.aria" aria-label="Navegación principal">
     <div class="container">
-      <a href="index.html" class="navbar-logo" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
+      <a href="index.html" class="navbar-logo" data-i18n-label="nav.inicio" aria-label="Inicio"><span class="navbar-logo-text">Daniela Serrano</span></a>
       <ul class="navbar-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
-      <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-switcher">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+      </div>
+      <button class="navbar-toggle" data-i18n-label="nav.abrir" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -28,10 +36,15 @@
   </nav>
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Proyectos</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" data-i18n="nav.inicio">Inicio</a>
+    <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
+    <div class="lang-switcher">
+      <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
+      <span class="lang-separator">|</span>
+      <button class="lang-en" data-lang="en" data-i18n-label="lang.en" aria-label="English">EN</button>
+    </div>
   </div>
 
   <main id="main-content">
@@ -41,23 +54,23 @@
           <aside class="case-study-sidebar">
             <a href="proyectos.html" class="case-study-back">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Volver
+              <span data-i18n="btn.volver">Volver</span>
             </a>
             <nav class="case-study-toc">
-              <p class="case-study-toc-label">En esta página</p>
+              <p class="case-study-toc-label" data-i18n="detail.en-pagina">En esta página</p>
               <ul class="case-study-toc-list">
-                <li><a href="#descripcion">Descripción</a></li>
-                <li><a href="#desafio">Desafío</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#resultado">Resultado</a></li>
+                <li><a href="#descripcion" data-i18n="detail.desc">Descripción</a></li>
+                <li><a href="#desafio" data-i18n="detail.desafio">Desafío</a></li>
+                <li><a href="#proceso" data-i18n="detail.proceso">Proceso</a></li>
+                <li><a href="#resultado" data-i18n="detail.resultado">Resultado</a></li>
               </ul>
             </nav>
           </aside>
 
           <article class="case-study-main">
-            <p class="case-study-label reveal reveal-delay-1">Caso de estudio</p>
-            <h1 class="case-study-title reveal reveal-delay-2">Administrador de Interacciones</h1>
-            <p class="case-study-description reveal reveal-delay-3">Herramienta de trazabilidad para Contact Center</p>
+            <p class="case-study-label reveal reveal-delay-1" data-i18n="detail.caso">Caso de estudio</p>
+            <h1 class="case-study-title reveal reveal-delay-2" data-i18n="title.espacio">Administrador de Interacciones</h1>
+            <p class="case-study-description reveal reveal-delay-3" data-i18n="espacio.desc-sub">Herramienta de trazabilidad para Contact Center</p>
 
             <div class="case-study-hero reveal reveal-delay-4">
               <img src="images/home-images/landingpage-accesa.png" alt="Administrador de Interacciones" style="width:100%;height:100%;object-fit:cover;object-position:top;">
@@ -65,50 +78,50 @@
 
             <div class="case-study-meta-grid reveal">
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Rol</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.rol">Rol</span>
                 <span class="case-study-meta-item-value">Product Designer</span>
               </div>
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Duración</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.duracion">Duración</span>
                 <span class="case-study-meta-item-value">3 meses</span>
               </div>
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Equipo</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.equipo">Equipo</span>
                 <span class="case-study-meta-item-value">2 diseñadores, 3 devs</span>
               </div>
               <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label">Impacto</span>
+                <span class="case-study-meta-item-label" data-i18n="detail.impacto">Impacto</span>
                 <span class="case-study-meta-item-value">WCAG AAA</span>
               </div>
             </div>
 
             <section class="cs-section reveal" id="descripcion">
-              <h2>Descripción breve</h2>
-              <p>Descripción general del proyecto. Incluye información sobre la empresa, el producto, y el problema de negocio que se buscaba resolver.</p>
+              <h2 data-i18n="detail.desc-breve">Descripción breve</h2>
+              <p data-i18n-html="espacio.desc">Descripción general del proyecto. Incluye información sobre la empresa, el producto, y el problema de negocio que se buscaba resolver.</p>
             </section>
 
             <section class="cs-section reveal" id="desafio">
-              <h2>Desafío</h2>
-              <p>Descripción del desafío específico que enfrentaban los usuarios y/o el negocio. Incluye datos sobre usuarios objetivo, sus frustraciones, y las barreras existentes.</p>
+              <h2 data-i18n="detail.desafio">Desafío</h2>
+              <p data-i18n-html="espacio.desafio">Descripción del desafío específico que enfrentaban los usuarios y/o el negocio. Incluye datos sobre usuarios objetivo, sus frustraciones, y las barreras existentes.</p>
             </section>
 
             <section class="cs-section reveal" id="proceso">
-              <h2>Proceso</h2>
-              <p>Descripción del proceso de diseño. Incluye las actividades de research, definición de la solución, y el proceso iterativo de diseño.</p>
+              <h2 data-i18n="detail.proceso">Proceso</h2>
+              <p data-i18n-html="espacio.proceso">Descripción del proceso de diseño. Incluye las actividades de research, definición de la solución, y el proceso iterativo de diseño.</p>
             </section>
 
             <section class="cs-section reveal" id="resultado">
-              <h2>Resultado</h2>
-              <p>Descripción de la solución diseñada y los resultados obtenidos. Incluye métricas de éxito y aprendizajes clave.</p>
+              <h2 data-i18n="detail.resultado">Resultado</h2>
+              <p data-i18n-html="espacio.resultado">Descripción de la solución diseñada y los resultados obtenidos. Incluye métricas de éxito y aprendizajes clave.</p>
             </section>
 
             <section class="cs-section reveal">
-              <h2>Habilidades</h2>
+              <h2 data-i18n="detail.habilidades">Habilidades</h2>
               <div class="about-tags">
-                <span class="tag">UX Research</span>
-                <span class="tag">Product Thinking</span>
-                <span class="tag">Service Design</span>
-                <span class="tag">Prototyping</span>
+                <span class="tag" data-i18n="skill.ux-research">UX Research</span>
+                <span class="tag" data-i18n="skill.product-thinking">Product Thinking</span>
+                <span class="tag" data-i18n="skill.service-design">Service Design</span>
+                <span class="tag" data-i18n="skill.prototyping">Prototyping</span>
               </div>
             </section>
           </article>
@@ -120,9 +133,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Daniela Serrano. Product Designer.</p>
+        <p class="footer-text" data-i18n="footer.text">© 2026 Daniela Serrano. Product Designer.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/danielaserranorosas/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/danielaserranorosas/" data-i18n-label="footer.linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <img src="images/icons_linkedin_50.png" width="20" height="20" alt="LinkedIn">
           </a>
         </div>
@@ -130,6 +143,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
