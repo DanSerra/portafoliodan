@@ -70,10 +70,10 @@
           <article class="case-study-main">
             <p class="case-study-label reveal reveal-delay-1" data-i18n="detail.caso">Caso de estudio</p>
             <h1 class="case-study-title reveal reveal-delay-2" data-i18n="title.atencion">Estrategia de Atención Híbrida</h1>
-            <p class="case-study-description reveal reveal-delay-3" data-i18n="atencion.desc-sub">Modelo de atención conversacional híbrido (chatbot + atención humana)</p>
+            <p class="case-study-description reveal reveal-delay-3" data-i18n="atencion.desc-sub">Diseño de un sistema conversacional para habilitar el autoservicio mediante chatbot y chat en vivo</p>
 
             <div class="case-study-hero reveal reveal-delay-4">
-              <img src="images/home-images/app-afforable.png" alt="Estrategia de Atención Híbrida" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+              <img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida" style="width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.5);">
             </div>
 
             <div class="case-study-meta-grid reveal">
@@ -83,45 +83,86 @@
               </div>
               <div class="case-study-meta-item">
                 <span class="case-study-meta-item-label" data-i18n="detail.duracion">Duración</span>
-                <span class="case-study-meta-item-value">3 meses</span>
-              </div>
-              <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label" data-i18n="detail.equipo">Equipo</span>
-                <span class="case-study-meta-item-value">2 diseñadores, 1 dev</span>
-              </div>
-              <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label" data-i18n="detail.impacto">Impacto</span>
-                <span class="case-study-meta-item-value">+60% conversiones</span>
+                <span class="case-study-meta-item-value" data-i18n="atencion.duracion">8 meses</span>
               </div>
             </div>
 
             <section class="cs-section reveal" id="descripcion">
               <h2 data-i18n="detail.desc-breve">Descripción breve</h2>
-              <p data-i18n-html="atencion.desc">Descripción general del proyecto. Incluye información sobre la empresa, el producto, y el problema de negocio que se buscaba resolver.</p>
+              <p data-i18n-html="atencion.desc">Diseño de una estrategia de atención híbrida para una aseguradora francesa multiramo, orientada a disminuir la carga operativa del Contact Center mediante la incorporación de un chatbot integrado con el servicio de chat en vivo existente. El proyecto transformó un modelo de atención centrado en canales humanos hacia un sistema conversacional escalable, capaz de resolver consultas frecuentes mediante autoservicio y transferir de forma contextualizada aquellos casos que requerían intervención de un asesor.</p>
             </section>
 
             <section class="cs-section reveal" id="desafio">
               <h2 data-i18n="detail.desafio">Desafío</h2>
-              <p data-i18n-html="atencion.desafio">Descripción del desafío específico que enfrentaban los usuarios y/o el negocio. Incluye datos sobre usuarios objetivo, sus frustraciones, y las barreras existentes.</p>
+              <p data-i18n-html="atencion.desafio.p1">Los canales digitales de atención habían evolucionado de forma independiente durante más de una década, sin una estrategia omnicanal ni lineamientos comunes de experiencia. Como consecuencia, los asegurados encontraban inconsistencias entre canales, poca confianza en las herramientas digitales y frecuentes interrupciones en sus recorridos, lo que incrementaba la dependencia del Contact Center incluso para consultas que podían resolverse mediante autoservicio.</p>
+              <p data-i18n-html="atencion.desafio.p2">La iniciativa inicial consistía en implementar un chatbot para reducir la carga operativa del Contact Center. Sin embargo, el reto de diseño consistió en definir una estrategia de atención híbrida que integrara automatización y atención humana como un único servicio, estableciendo criterios claros para resolver consultas mediante el chatbot o transferirlas oportunamente al chat en vivo, considerando además las restricciones de seguridad que impedían el uso de datos personales dentro del canal automatizado.</p>
             </section>
 
             <section class="cs-section reveal" id="proceso">
               <h2 data-i18n="detail.proceso">Proceso</h2>
-              <p data-i18n-html="atencion.proceso">Descripción del proceso de diseño. Incluye las actividades de research, definición de la solución, y el proceso iterativo de diseño.</p>
+
+              <h3 data-i18n="atencion.sub.discovery">Discovery</h3>
+              <p data-i18n-html="atencion.proceso.p1">Como Product Designer, inicié el proyecto analizando las principales causas de contacto del Contact Center mediante la revisión de los temas con mayor volumen de consultas. Entre ellos se encontraban la descarga de pólizas, consulta de coberturas, obtención de documentos para iniciar trámites y seguimiento de solicitudes.</p>
+              <p data-i18n-html="atencion.proceso.p2">Posteriormente documenté cómo los asesores resolvían cada uno de estos casos para comprender la lógica operativa detrás de las conversaciones y transformarla en flujos conversacionales.</p>
+              <p data-i18n-html="atencion.proceso.p3">Como complemento, realizamos una recopilación de expresiones utilizadas por los asegurados en distintas regiones del país para identificar variaciones del lenguaje natural que pudieran afectar el reconocimiento de intenciones. Este ejercicio permitió ampliar considerablemente las formas en que una misma solicitud podía interpretarse dentro del chatbot.</p>
+
+              <h3 data-i18n="atencion.sub.definicion">Definición</h3>
+              <p data-i18n-html="atencion.proceso.p4">Sinteticé los hallazgos para construir la arquitectura conversacional del servicio, definiendo alrededor de 100 intents organizados a partir de los principales motivos de contacto del usuario.</p>
+              <p data-i18n-html="atencion.proceso.p5">Transformé el conocimiento operativo del Contact Center en árboles de decisión adaptados al canal conversacional, estableciendo las respuestas, rutas de navegación y criterios de escalamiento hacia un asesor cuando la consulta excedía las capacidades del chatbot.</p>
+              <p data-i18n-html="atencion.proceso.p6">Uno de los principales retos fue determinar el momento adecuado para transferir la conversación al chat en vivo. Para evitar que el usuario quedara atrapado en ciclos de conversación, diseñé estrategias de recuperación cuando el chatbot no lograba identificar correctamente la intención del usuario, ofreciendo la transferencia automática después de múltiples intentos fallidos.</p>
+              <p data-i18n-html="atencion.proceso.p7">Asimismo, definimos un modelo de medición para evaluar el desempeño del servicio mediante indicadores como reconocimiento de intents, abandono de conversaciones, frecuencia de temas consultados, funnels conversacionales y encuesta de satisfacción del chatbot.</p>
+
+              <h3 data-i18n="atencion.sub.diseno">Diseño</h3>
+              <p data-i18n-html="atencion.proceso.p8">Diseñé la experiencia conversacional utilizando los componentes disponibles en Dialogflow, complementados con elementos visuales alineados al sistema de diseño corporativo de AXA.</p>
+              <p data-i18n-html="atencion.proceso.p9">La solución combinó distintos patrones de interacción según el contexto de cada consulta: lenguaje natural mediante texto libre, navegación guiada mediante quick replies, tarjetas con información estructurada, y árboles de decisión para consultas complejas.</p>
+              <p data-i18n-html="atencion.proceso.p10">Además de diseñar los flujos principales, desarrollé los mensajes conversacionales del asistente virtual, manteniendo el tono institucional de la marca sin construir una personalidad propia para el chatbot.</p>
+              <p data-i18n-html="atencion.proceso.p11">También diseñé los estados de recuperación, mensajes de confirmación, continuidad entre canales, transferencia al asesor, espera durante la conexión y cierre de conversación, buscando que la transición hacia el chat en vivo fuera clara y continua para el usuario.</p>
+              <p data-i18n-html="atencion.proceso.p12">Tras la implementación participé activamente en la evolución del producto durante aproximadamente un año y medio, gestionando nuevos requerimientos del Contact Center, actualizaciones de contenido y validando junto con el proveedor la correcta implementación de cada mejora antes de su liberación.</p>
             </section>
 
             <section class="cs-section reveal" id="resultado">
               <h2 data-i18n="detail.resultado">Resultado</h2>
-              <p data-i18n-html="atencion.resultado">Descripción de la solución diseñada y los resultados obtenidos. Incluye métricas de éxito y aprendizajes clave.</p>
+
+              <h3 data-i18n="atencion.sub.usuario">Para el usuario</h3>
+              <p data-i18n-html="atencion.resultado.p1"><strong>Para el usuario</strong> Los asegurados obtuvieron un nuevo canal de autoservicio para resolver consultas frecuentes mediante lenguaje natural y navegación guiada, con una transición fluida hacia un asesor cuando la automatización no era suficiente.</p>
+              <p data-i18n-html="atencion.resultado.p2">La incorporación de mensajes de recuperación y continuidad permitió reducir la sensación de bloqueo cuando el chatbot no comprendía una solicitud, mientras que la transferencia contextualizada evitó que el usuario tuviera que reiniciar completamente su conversación.</p>
+
+              <h3 data-i18n="atencion.sub.negocio">Para el negocio</h3>
+              <p data-i18n-html="atencion.resultado.p3"><strong>Para el negocio</strong> La estrategia permitió reducir aproximadamente un 10% la demanda de atención en el chat en vivo mediante la automatización de consultas recurrentes.</p>
+              <p data-i18n-html="atencion.resultado.p4">También mejoró el enrutamiento de solicitudes, diferenciando de forma más precisa los casos correspondientes a clientes, agentes, proveedores y soporte técnico, canalizando cada conversación hacia el equipo adecuado y reduciendo la carga operativa derivada de solicitudes mal clasificadas.</p>
+              <p data-i18n-html="atencion.resultado.p5">Adicionalmente, el proyecto estableció por primera vez un modelo de métricas para monitorear el desempeño del chatbot y evidenció las limitaciones de operar chatbot y chat en vivo sobre plataformas independientes, fortaleciendo el caso de negocio para evolucionar hacia una estrategia omnicanal.</p>
+
+              <h3 data-i18n="atencion.sub.aprendizaje">Aprendizaje clave</h3>
+              <p data-i18n-html="atencion.resultado.p6"><strong>Aprendizaje clave</strong> Un chatbot no resuelve problemas únicamente por automatizar respuestas; su valor depende de la estrategia conversacional que conecta las necesidades del usuario con la operación del negocio.</p>
+              <p data-i18n-html="atencion.resultado.p7">Este proyecto demostró que diseñar un sistema híbrido implica definir cuidadosamente cuándo automatizar, cuándo escalar a un asesor y cómo mantener la continuidad de la conversación entre ambos canales. También confirmó que las limitaciones tecnológicas y de seguridad pueden condicionar la experiencia, por lo que el diseño debe adaptarse a ellas sin perder claridad ni eficiencia para el usuario.</p>
             </section>
 
             <section class="cs-section reveal">
               <h2 data-i18n="detail.habilidades">Habilidades</h2>
               <div class="about-tags">
-                <span class="tag" data-i18n="skill.ux-research">UX Research</span>
                 <span class="tag" data-i18n="skill.product-thinking">Product Thinking</span>
+                <span class="tag" data-i18n="skill.conversational-ux">Conversational UX</span>
+                <span class="tag" data-i18n="skill.conversation-design">Conversation Design</span>
                 <span class="tag" data-i18n="skill.service-design">Service Design</span>
-                <span class="tag" data-i18n="skill.prototyping">Prototyping</span>
+                <span class="tag" data-i18n="skill.arch-conversacional">Arquitectura conversacional</span>
+                <span class="tag" data-i18n="skill.arq-info">Arquitectura de la Información</span>
+                <span class="tag" data-i18n="skill.ux-writing">UX Writing</span>
+                <span class="tag" data-i18n="skill.decision-trees">Diseño de árboles de decisión</span>
+                <span class="tag" data-i18n="skill.hybrid-flows">Diseño de flujos híbridos (chatbot + chat en vivo)</span>
+                <span class="tag" data-i18n="skill.interaction">Diseño de interacción</span>
+                <span class="tag" data-i18n="skill.figma-prototyping">Prototipado en Figma</span>
+                <span class="tag" data-i18n="skill.dialogflow">Dialogflow</span>
+                <span class="tag" data-i18n="skill.metrics-def">Definición de métricas</span>
+                <span class="tag" data-i18n="skill.functional-qa">QA funcional</span>
+                <span class="tag" data-i18n="skill.stakeholder-mgmt">Gestión de stakeholders</span>
+                <span class="tag" data-i18n="skill.multidisciplinary">Colaboración multidisciplinaria</span>
+              </div>
+            </section>
+
+            <section class="cs-section reveal">
+              <h2 data-i18n="detail.galeria">Galería</h2>
+              <div class="gallery-bento">
+                <img src="images/atencion/atencion_hibrida.png" alt="Estrategia de Atención Híbrida" style="width: 100%; height: auto; display: block; grid-column: span 3;">
               </div>
             </section>
           </article>
