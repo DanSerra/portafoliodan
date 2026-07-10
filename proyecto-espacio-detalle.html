@@ -70,10 +70,10 @@
           <article class="case-study-main">
             <p class="case-study-label reveal reveal-delay-1" data-i18n="detail.caso">Caso de estudio</p>
             <h1 class="case-study-title reveal reveal-delay-2" data-i18n="title.espacio">Administrador de Interacciones</h1>
-            <p class="case-study-description reveal reveal-delay-3" data-i18n="espacio.desc-sub">Herramienta de trazabilidad para Contact Center</p>
+            <p class="case-study-description reveal reveal-delay-3" data-i18n="espacio.desc-sub">Diseño de un workspace para centralizar la gestión de interacciones del Contact Center</p>
 
             <div class="case-study-hero reveal reveal-delay-4">
-              <img src="images/home-images/landingpage-accesa.png" alt="Administrador de Interacciones" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+              <img src="images/espacio/n_espacio.png" alt="Administrador de Interacciones" style="width:100%;height:100%;object-fit:cover;object-position:center;">
             </div>
 
             <div class="case-study-meta-grid reveal">
@@ -83,45 +83,91 @@
               </div>
               <div class="case-study-meta-item">
                 <span class="case-study-meta-item-label" data-i18n="detail.duracion">Duración</span>
-                <span class="case-study-meta-item-value">3 meses</span>
-              </div>
-              <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label" data-i18n="detail.equipo">Equipo</span>
-                <span class="case-study-meta-item-value">2 diseñadores, 3 devs</span>
-              </div>
-              <div class="case-study-meta-item">
-                <span class="case-study-meta-item-label" data-i18n="detail.impacto">Impacto</span>
-                <span class="case-study-meta-item-value">WCAG AAA</span>
+                <span class="case-study-meta-item-value">18 meses</span>
               </div>
             </div>
 
             <section class="cs-section reveal" id="descripcion">
               <h2 data-i18n="detail.desc-breve">Descripción breve</h2>
-              <p data-i18n-html="espacio.desc">Descripción general del proyecto. Incluye información sobre la empresa, el producto, y el problema de negocio que se buscaba resolver.</p>
+              <p data-i18n-html="espacio.desc">Diseño de un espacio de trabajo para asesores de Contact Center que centralizó la consulta de información, el registro de interacciones y la gestión operativa en una única herramienta. El proyecto surgió como una alternativa frente a una plataforma basada en herramienta heredada que había alcanzado sus límites de escalabilidad y mantenibilidad, permitiendo simplificar el trabajo diario de los asesores mientras reducía riesgos asociados a la dispersión de información y al uso inadecuado de datos.</p>
             </section>
 
             <section class="cs-section reveal" id="desafio">
               <h2 data-i18n="detail.desafio">Desafío</h2>
-              <p data-i18n-html="espacio.desafio">Descripción del desafío específico que enfrentaban los usuarios y/o el negocio. Incluye datos sobre usuarios objetivo, sus frustraciones, y las barreras existentes.</p>
+              <p data-i18n-html="espacio.desafio.p1">El Contact Center dependía de una solución desarrollada sobre herramienta heredada, sin soporte activo y con una fuerte deuda técnica, utilizada para registrar, clasificar y consultar las interacciones de los canales de voz y chat.</p>
+              <p data-i18n-html="espacio.desafio.p2">Con el paso de los años la herramienta evolucionó hasta convertirse también en un repositorio documental y operativo para otras funciones del Contact Center, incrementando aún más su complejidad.</p>
+              <p data-i18n-html="espacio.desafio.p3">Los asesores debían alternar entre múltiples aplicaciones para identificar clientes, consultar pólizas, registrar llamadas y clasificar cada interacción, duplicando información entre sistemas y recurriendo incluso al uso de hojas de cálculo o bloc de notas para gestionar temporalmente datos sensibles.</p>
+              <p data-i18n-html="espacio.desafio.p4">Aunque la organización iniciaba una estrategia de modernización tecnológica, el Contact Center no estaba contemplado dentro de esa iniciativa. El reto consistió en diseñar una solución que mitigara el riesgo operativo y mejorara la experiencia de los asesores sin depender de una renovación completa de la infraestructura.</p>
             </section>
 
             <section class="cs-section reveal" id="proceso">
               <h2 data-i18n="detail.proceso">Proceso</h2>
-              <p data-i18n-html="espacio.proceso">Descripción del proceso de diseño. Incluye las actividades de research, definición de la solución, y el proceso iterativo de diseño.</p>
+
+              <h3 data-i18n="espacio.sub.discovery">Discovery</h3>
+              <p data-i18n-html="espacio.proceso.p1">Como Product Designer y líder de la célula de desarrollo, realicé un proceso continuo de investigación directamente en el Contact Center mediante observación contextual (shadowing), entrevistas y sesiones de descubrimiento con todos los perfiles involucrados: asesores, supervisores, coordinadores, gerentes, dirección y el administrador responsable de la configuración histórica de la herramienta.</p>
+              <p data-i18n-html="espacio.proceso.p2">Durante varias visitas documentamos cómo se atendían las llamadas, qué sistemas intervenían en cada interacción y cómo fluía la información entre personas, herramientas y procesos.</p>
+              <p data-i18n-html="espacio.proceso.p3">Complementamos la investigación con un benchmark de soluciones de mercado y modelamos la operación mediante diagramas AS IS y TO BE para identificar oportunidades de mejora.</p>
+              <p data-i18n="espacio.proceso.p4">Los principales hallazgos fueron:</p>
+              <div data-i18n-html="espacio.proceso.hallazgos"><ul><li>Los asesores alternaban constantemente entre múltiples sistemas para completar una sola interacción.</li><li>Existía una duplicidad significativa en la captura de información.</li><li>No había una fuente única y confiable para identificar clientes, agentes o terceros.</li><li>La calidad de los datos dificultaba la trazabilidad de las interacciones.</li><li>El uso de Excel y bloc de notas generaba riesgos de seguridad y fuga de información.</li></ul></div>
+              <p data-i18n-html="espacio.proceso.p5">Más que un problema de interfaz, identificamos un problema estructural en la forma en que la organización gestionaba la información.</p>
+
+              <h3 data-i18n="espacio.sub.definicion">Definición</h3>
+              <p data-i18n-html="espacio.proceso.def.p1">A partir de la investigación concluimos que reemplazar la herramienta heredada por otra herramienta comercial no resolvería el problema, ya que las necesidades específicas del Contact Center no estaban cubiertas por soluciones existentes, incluyendo plataformas de Contact Center as a Service (CCaaS), CRM y herramientas de formularios.</p>
+              <p data-i18n-html="espacio.proceso.def.p2">Definimos una visión centrada en un workspace único, donde el asesor pudiera realizar la mayor parte de su trabajo sin cambiar constantemente de aplicación.</p>
+              <p data-i18n="espacio.proceso.def.p3">La estrategia contempló:</p>
+              <div data-i18n-html="espacio.proceso.estrategia"><ul><li>centralizar la consulta de clientes, agentes y terceros;</li><li>asociar las interacciones al historial del usuario para mantener continuidad entre contactos;</li><li>simplificar el registro mediante formularios dinámicos;</li><li>incorporar un espacio seguro para notas operativas, eliminando el uso de archivos personales;</li><li>integrar parcialmente el sistema de telefonía para identificar automáticamente al cliente desde el número telefónico cuando fuera posible.</li></ul></div>
+              <p data-i18n-html="espacio.proceso.def.p4">Aunque la estrategia de datos existente limitaba la confiabilidad de la información, el nuevo espacio de trabajo permitió concentrar la consulta en un solo punto y reducir significativamente la navegación entre sistemas.</p>
+
+              <h3 data-i18n="espacio.sub.diseno">Diseño</h3>
+              <p data-i18n-html="espacio.proceso.dis.p1">Diseñé la experiencia completa del producto, desde wireframes hasta prototipos de alta fidelidad, utilizando y enriqueciendo el sistema de diseño corporativo, que se encontraba en una etapa temprana de madurez.</p>
+              <p data-i18n-html="espacio.proceso.dis.p2">La solución incluyó módulos para:</p>
+              <div data-i18n-html="espacio.proceso.modulos"><ul><li>búsqueda unificada de personas;</li><li>formularios dinámicos para el registro de interacciones;</li><li>historial de contactos;</li><li>tablas y filtros para consulta;</li><li>administración de catálogos;</li><li>gestión de usuarios;</li><li>notificaciones;</li><li>reportería y exportación de información.</li></ul></div>
+              <p data-i18n-html="espacio.proceso.dis.p3">Cada rol del Contact Center contaba con vistas específicas según sus responsabilidades, mientras que el espacio de trabajo de los asesores se convirtió en el núcleo operativo de la herramienta.</p>
+              <p data-i18n-html="espacio.proceso.dis.p4">Además del diseño de experiencia, lideré la definición del roadmap del producto, la priorización del backlog, la coordinación con desarrollo, el seguimiento funcional y la planeación de liberaciones bajo una dinámica inspirada en Scrum.</p>
+              <p data-i18n-html="espacio.proceso.dis.p5">Para facilitar la adopción diseñamos una estrategia integral de incorporación que combinó walkthroughs, tooltips, recorridos guiados, manuales, videos y materiales de capacitación desarrollados junto con el equipo de Formación.</p>
             </section>
 
             <section class="cs-section reveal" id="resultado">
               <h2 data-i18n="detail.resultado">Resultado</h2>
-              <p data-i18n-html="espacio.resultado">Descripción de la solución diseñada y los resultados obtenidos. Incluye métricas de éxito y aprendizajes clave.</p>
+
+              <h3 data-i18n="espacio.sub.usuario">Para el usuario</h3>
+              <p data-i18n-html="espacio.resultado.usuario.p1"><strong>Para el usuario</strong> Los asesores pudieron concentrar gran parte de su operación diaria en un único espacio de trabajo, reduciendo el cambio constante entre sistemas y simplificando el registro de interacciones.</p>
+              <p data-i18n-html="espacio.resultado.usuario.p2">La incorporación de un buscador unificado, historial de clientes, formularios optimizados y un espacio seguro para notas permitió disminuir la dependencia de herramientas externas como Excel o bloc de notas y ofrecer una experiencia de trabajo más consistente.</p>
+              <p data-i18n-html="espacio.resultado.usuario.p3">La estrategia de onboarding favoreció una adopción gradual entre los equipos participantes y facilitó la incorporación de nuevas funcionalidades conforme evolucionaba el producto.</p>
+
+              <h3 data-i18n="espacio.sub.negocio">Para el negocio</h3>
+              <p data-i18n-html="espacio.resultado.negocio.p1"><strong>Para el negocio</strong> La solución fue implementada para aproximadamente 200 asesores en procesos de menor complejidad, mitigando parte del riesgo operativo asociado a una plataforma sin soporte y validando la viabilidad de un modelo de workspace para el Contact Center.</p>
+              <p data-i18n-html="espacio.resultado.negocio.p2">El proyecto también permitió demostrar que la problemática principal no residía únicamente en la infraestructura tecnológica, sino en la fragmentación de procesos, herramientas y datos.</p>
+              <p data-i18n-html="espacio.resultado.negocio.p3">Años después, durante la migración del Contact Center hacia una plataforma Contact Center as a Service (CCaaS), las soluciones comerciales continuaban sin cubrir esta necesidad de operación centralizada, confirmando que el problema identificado durante la investigación seguía vigente y que el concepto del workspace mantenía su valor estratégico para la organización.</p>
             </section>
 
             <section class="cs-section reveal">
               <h2 data-i18n="detail.habilidades">Habilidades</h2>
               <div class="about-tags">
-                <span class="tag" data-i18n="skill.ux-research">UX Research</span>
-                <span class="tag" data-i18n="skill.product-thinking">Product Thinking</span>
+                <span class="tag" data-i18n="skill.enterprise-pd">Enterprise Product Design</span>
+                <span class="tag" data-i18n="skill.internal-tools">UX para productos internos (Internal Tools)</span>
+                <span class="tag" data-i18n="skill.workspace-design">Workspace Design</span>
+                <span class="tag" data-i18n="skill.agent-xp">Agent Experience (AX)</span>
                 <span class="tag" data-i18n="skill.service-design">Service Design</span>
-                <span class="tag" data-i18n="skill.prototyping">Prototyping</span>
+                <span class="tag" data-i18n="skill.ux-research">UX Research</span>
+                <span class="tag" data-i18n="skill.shadowing">Shadowing y Contextual Inquiry</span>
+                <span class="tag" data-i18n="skill.user-interviews">Entrevistas con usuarios</span>
+                <span class="tag" data-i18n="skill.cjm">Customer Journey Mapping</span>
+                <span class="tag" data-i18n="skill.as-is-to-be">AS IS / TO BE</span>
+                <span class="tag" data-i18n="skill.arq-info">Arquitectura de información</span>
+                <span class="tag" data-i18n="skill.interaction">Diseño de interacción</span>
+                <span class="tag" data-i18n="skill.complex-forms">Diseño de formularios complejos</span>
+                <span class="tag" data-i18n="skill.design-systems">Sistemas de diseño</span>
+                <span class="tag" data-i18n="skill.figma-prototyping">Prototipado en Figma</span>
+                <span class="tag" data-i18n="skill.product-strategy">Product Strategy</span>
+                <span class="tag" data-i18n="skill.product-roadmap">Roadmap de producto</span>
+                <span class="tag" data-i18n="skill.backlog-prio">Priorización de backlog</span>
+                <span class="tag" data-i18n="skill.scrum">Scrum</span>
+                <span class="tag" data-i18n="skill.multidisciplinary-leadership">Liderazgo de equipos multidisciplinarios</span>
+                <span class="tag" data-i18n="skill.stakeholder-mgmt">Gestión de stakeholders</span>
+                <span class="tag" data-i18n="skill.change-mgmt">Gestión del cambio (Change Management)</span>
+                <span class="tag" data-i18n="skill.onboarding-strategy">Estrategias de adopción y onboarding</span>
+                <span class="tag" data-i18n="skill.functional-qa">QA funcional</span>
               </div>
             </section>
           </article>
