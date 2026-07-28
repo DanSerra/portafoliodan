@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+open<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
       <ul class="navbar-nav">
         <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
         <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
-        <li><a href="perfil.html" data-i18n="nav.perfil">Perfil</a></li>
+        <li><a href="perfil.html" data-i18n="nav.perfil">Acerca de mí</a></li>
         <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
       <div class="lang-switcher">
@@ -38,7 +38,7 @@
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <a href="index.html" data-i18n="nav.inicio">Inicio</a>
     <a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a>
-    <a href="perfil.html" data-i18n="nav.perfil">Perfil</a>
+    <a href="perfil.html" data-i18n="nav.perfil">Acerca de mí</a>
     <a href="contacto.html" data-i18n="nav.contacto">Contacto</a>
     <div class="lang-switcher">
       <button class="lang-es active" data-lang="es" data-i18n-label="lang.es" aria-label="Español">ES</button>
@@ -65,7 +65,7 @@
           </div>
 
           <!-- Salud (dominant) -->
-          <div class="proyecto-card proyecto-card--large">
+          <div class="proyecto-card proyecto-card--large proyecto-card--digital">
             <a href="proyecto-salud-detalle.html" class="proyecto-card-link">
               <div class="proyecto-card-image">
                 <img src="images/EDSI/EDSI1.jpeg" alt="Experiencia Unificada Gastos Médicos" loading="lazy">
@@ -79,7 +79,7 @@
           </div>
 
           <!-- Atención -->
-          <div class="proyecto-card">
+          <div class="proyecto-card proyecto-card--digital">
             <a href="proyecto-atencion-detalle.html" class="proyecto-card-link">
               <div class="proyecto-card-image">
                 <img src="images/chat/chatbot-1.png" alt="Estrategia de Atención Híbrida" loading="lazy">
@@ -93,7 +93,7 @@
           </div>
 
           <!-- Espacio -->
-          <div class="proyecto-card">
+          <div class="proyecto-card proyecto-card--digital">
             <a href="proyecto-espacio-detalle.html" class="proyecto-card-link">
               <div class="proyecto-card-image">
                 <img src="images/espacio/n_espacio.png" alt="Administrador de Interacciones" loading="lazy">
@@ -106,79 +106,61 @@
             </a>
           </div>
 
-          <!-- Branding y editorial -->
-          <div class="proyecto-card proyecto-card--heading">
-            <h2 data-i18n="cat.branding">Branding y editorial</h2>
-          </div>
+          <!-- Otros proyectos -->
+        </div>
+      </div>
+    </section>
 
-          <!-- Slot (dominant) -->
-          <div class="proyecto-card proyecto-card--large">
-            <a href="proyecto-slot-detalle.html" class="proyecto-card-link">
-              <div class="proyecto-card-image">
+    <section class="proyectos-section proyectos-section--otros">
+      <div class="container">
+        <div class="otros-header">
+          <h2 data-i18n="cat.otros">Otros proyectos</h2>
+          <p data-i18n="cat.otros.desc">Estos proyectos muestran las raíces de diseño visual y de marca que siguen nutriendo mi trabajo de producto</p>
+        </div>
+        <div class="otros-grid">
+          <div class="otros-card">
+            <a href="proyecto-slot-detalle.html" class="otros-card-link">
+              <div class="otros-card-image">
                 <img src="images/home-images/slot5.png" alt="Slot" loading="lazy">
               </div>
-              <div class="proyecto-card-content">
-                <span class="proyecto-card-tag" data-i18n="slot.rol">Brand &amp; Visual Designer Lead</span>
-                <h3 class="proyecto-card-title" data-i18n="title.slot">Slot</h3>
-                <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
+              <div class="otros-card-content">
+                <span class="otros-card-tag" data-i18n="slot.rol">Brand &amp; Visual Designer Lead</span>
+                <h3 class="otros-card-title" data-i18n="title.slot">Slot</h3>
               </div>
             </a>
           </div>
-
-          <!-- Kanji -->
-          <div class="proyecto-card proyecto-card--disabled">
-            <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title" data-i18n="title.kanji">Kanji</h3>
-              <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
-            </div>
-            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
-          </div>
-
-          <!-- Riev -->
-          <div class="proyecto-card proyecto-card--disabled">
-            <div class="proyecto-card-content">
-              <span class="proyecto-card-tag">Visual Designer</span>
-              <h3 class="proyecto-card-title" data-i18n="title.riev">Riev</h3>
-              <!-- <span class="proyecto-card-metric">+80% leads</span> -->
-            </div>
-            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
-          </div>
-
-          <!-- Diseño de exposiciones -->
-          <div class="proyecto-card proyecto-card--heading">
-            <h2 data-i18n="cat.exposiciones">Diseño de exposiciones</h2>
-          </div>
-
-          <!-- yo.contenido (dominant) -->
-          <div class="proyecto-card proyecto-card--large">
-            <a href="proyecto-yocontenido-detalle.html" class="proyecto-card-link">
-              <div class="proyecto-card-image">
+          <div class="otros-card">
+            <a href="proyecto-yocontenido-detalle.html" class="otros-card-link">
+              <div class="otros-card-image">
                 <img src="images/yocontenido/fachda1.jpg" alt="yo.contenido" loading="lazy">
               </div>
-              <div class="proyecto-card-content">
-                <span class="proyecto-card-tag" data-i18n="yoc.rol">Diseñador de exposiciones</span>
-                <h3 class="proyecto-card-title" data-i18n="title.yoc">yo.contenido</h3>
-                <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
+              <div class="otros-card-content">
+                <span class="otros-card-tag" data-i18n="yoc.rol">Diseñador de exposiciones</span>
+                <h3 class="otros-card-title" data-i18n="title.yoc">yo.contenido</h3>
               </div>
             </a>
           </div>
-
-          <!-- Nacimiento -->
-          <div class="proyecto-card">
-            <a href="proyecto-nacimiento-detalle.html" class="proyecto-card-link">
-              <div class="proyecto-card-image">
+          <div class="otros-card">
+            <a href="proyecto-nacimiento-detalle.html" class="otros-card-link">
+              <div class="otros-card-image">
                 <img src="images/nacimiento/IMG_20131210_135344.jpg" alt="Nacimiento" loading="lazy">
               </div>
-              <div class="proyecto-card-content">
-                <span class="proyecto-card-tag" data-i18n="nac.rol">Diseñador de exposiciones</span>
-                <h3 class="proyecto-card-title" data-i18n="title.nac">Nacimiento</h3>
-                
-                <!-- <span class="proyecto-card-metric">Ver proyecto</span> -->
+              <div class="otros-card-content">
+                <span class="otros-card-tag" data-i18n="nac.rol">Diseñador de exposiciones</span>
+                <h3 class="otros-card-title" data-i18n="title.nac">Nacimiento</h3>
               </div>
             </a>
           </div>
-
+          <div class="otros-card otros-card--disabled">
+            <div class="otros-card-image">
+              <img src="images/riev/aniverario-riev-01.jpg" alt="RIEV" loading="lazy">
+            </div>
+            <div class="otros-card-content">
+              <span class="otros-card-tag" data-i18n="riev.rol">Visual Designer</span>
+              <h3 class="otros-card-title" data-i18n="title.riev">Riev</h3>
+            </div>
+            <span class="bento-card-badge" data-i18n="badge.proximamente">Próximamente</span>
+          </div>
         </div>
       </div>
     </section>

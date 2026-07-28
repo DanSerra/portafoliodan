@@ -5,7 +5,7 @@ const i18n = {
       /* Navbar */
       'nav.inicio': 'Inicio',
       'nav.proyectos': 'Proyectos',
-      'nav.perfil': 'Perfil',
+      'nav.perfil': 'Acerca de mí',
       'nav.contacto': 'Contacto',
       'nav.casos': 'Casos de estudio',
       'nav.aria': 'Navegación principal',
@@ -26,9 +26,12 @@ const i18n = {
       'form.success': 'Mensaje enviado correctamente. Te contactaré pronto.',
       'form.error': 'Error al enviar. Intenta de nuevo.',
       'btn.enviar': 'Enviar mensaje',
+      'btn.contacto': 'Contáctame',
       'btn.descargar': 'Descargar CV',
       'btn.ver': 'Ver proyectos',
       'btn.ver-todos': 'Ver todos',
+      'nav.prev': 'Proyecto anterior',
+      'nav.next': 'Siguiente proyecto',
       'btn.contactame': 'Contáctame',
       'btn.volver': 'Volver',
       'lang.es': 'Español',
@@ -39,6 +42,7 @@ const i18n = {
       'hero.name': 'Daniela Serrano',
       'hero.title': 'Diseñadora de productos y experiencias',
       'hero.subtitle': 'Articulando soluciones digitales complejas con un enfoque humano y estratégico.',
+      'hero.tagline': 'Diseño estratégico end-to-end: de la marca al producto, con impacto medible en negocio y usuarios.',
 
       /* Index */
       'proyectos.titulo': 'Proyectos',
@@ -56,14 +60,15 @@ const i18n = {
       'proyectos.h1': 'Proyectos',
       'proyectos.subtitle': 'Una selección de casos donde el diseño estratégico generó impacto medible en negocio y usuarios.',
       'cat.digital': 'Diseño de productos digitales',
-      'cat.branding': 'Branding y editorial',
-      'cat.exposiciones': 'Diseño de exposiciones',
+      'cat.otros': 'Otros proyectos',
+      'cat.otros.desc': 'Estos proyectos muestran las raíces de diseño visual y de marca que siguen nutriendo mi trabajo de producto',
 
       /* Perfil page */
-      'perfil.h1': 'Perfil',
+      'perfil.h1': 'Acerca de mí',
       'perfil.subtitle': 'Product Designer con más de 7 años de experiencia creando productos digitales.',
       'perfil.nombre': 'Daniela Serrano',
-      'perfil.desc': 'Product Designer enfocada en pensamiento sistémico y producto end-to-end. Creo en el diseño como herramienta estratégica para conectar negocio, usuarios y tecnología.',
+      'perfil.desc': 'Trabajo en la intersección entre negocio, usuarios y tecnología. Mi enfoque es sistémico: antes de diseñar pantallas, entiendo flujos, estructuras y motivaciones. He liderado productos en el sector financiero que transforman procesos complejos en experiencias claras, y antes de enfocarme en digital, construí identidades de marca y experiencias físicas que me enseñaron que el buen diseño siempre nace de una estrategia sólida.',
+      'perfil.ubicacion': 'Radico en la Ciudad de México.',
       'perfil.especialidades': 'Especialidades',
       'perfil.habilidades': 'Habilidades',
       'perfil.experiencia': 'Experiencia',
@@ -168,13 +173,14 @@ const i18n = {
       'atencion.duracion': '8 meses',
 
       /* Slot detail */
-      'slot.rol': 'Brand & Visual Designer Lead',
+      'slot.rol': 'Diseñador principal de marca y visual',
 
       /* yo.contenido detail */
       'yoc.rol': 'Diseñador de exposiciones',
 
       /* Nacimiento detail */
       'nac.rol': 'Diseñador de exposiciones',
+      'riev.rol': 'Diseñador Visual',
 
       /* Salud detail */
       'salud.rol': 'UX Lead',
@@ -308,17 +314,17 @@ const i18n = {
       'title.salud': 'Experiencia Unificada Gastos Médicos',
       'title.atencion': 'Estrategia de Atención Híbrida',
       'title.espacio': 'Administrador de Interacciones',
-      'title.slot': 'Slot',
+      'title.slot': 'SLOT',
       'title.kanji': 'Kanji',
-      'title.riev': 'Riev',
+      'title.riev': 'RIEV',
       'title.yoc': 'yo.contenido',
-      'title.nac': 'Nacimiento',
+      'title.nac': 'NACIMIENTO',
     },
     en: {
       /* Navbar */
       'nav.inicio': 'Home',
       'nav.proyectos': 'Projects',
-      'nav.perfil': 'About',
+      'nav.perfil': 'About me',
       'nav.contacto': 'Contact',
       'nav.casos': 'Case Studies',
       'nav.aria': 'Main navigation',
@@ -339,9 +345,12 @@ const i18n = {
       'form.success': 'Message sent successfully. I\'ll get back to you soon.',
       'form.error': 'Error sending message. Please try again.',
       'btn.enviar': 'Send message',
+      'btn.contacto': 'Contact me',
       'btn.descargar': 'Download CV',
       'btn.ver': 'View projects',
       'btn.ver-todos': 'View all',
+      'nav.prev': 'Previous project',
+      'nav.next': 'Next project',
       'btn.contactame': 'Get in touch',
       'btn.volver': 'Back',
       'lang.es': 'Spanish',
@@ -352,6 +361,7 @@ const i18n = {
       'hero.name': 'Daniela Serrano',
       'hero.title': 'Product & Experience Designer',
       'hero.subtitle': 'Articulating complex digital solutions with a human-centered and strategic approach.',
+      'hero.tagline': 'End-to-end strategic design: from brand to product, with measurable impact on business and users.',
 
       /* Index */
       'proyectos.titulo': 'Projects',
@@ -369,14 +379,15 @@ const i18n = {
       'proyectos.h1': 'Projects',
       'proyectos.subtitle': 'A selection of cases where strategic design generated measurable impact on business and users.',
       'cat.digital': 'Digital Product Design',
-      'cat.branding': 'Branding & Editorial',
-      'cat.exposiciones': 'Exhibition Design',
+      'cat.otros': 'Other Projects',
+      'cat.otros.desc': 'These projects showcase the visual and brand design roots that continue to shape my product work',
 
       /* Perfil page */
-      'perfil.h1': 'About',
+      'perfil.h1': 'About me',
       'perfil.subtitle': 'Product Designer with over 7 years of experience creating digital products.',
       'perfil.nombre': 'Daniela Serrano',
-      'perfil.desc': 'Product Designer focused on systems thinking and end-to-end product design. I believe in design as a strategic tool to connect business, users and technology.',
+      'perfil.desc': 'I work at the intersection of business, users, and technology. My approach is systems-driven: before designing screens, I understand flows, structures, and motivations. I have led products in the financial sector that transform complex processes into clear experiences, and before focusing on digital, I built brand identities and physical experiences that taught me that good design always stems from a solid strategy.',
+      'perfil.ubicacion': 'Based in Mexico City.',
       'perfil.especialidades': 'Specialties',
       'perfil.habilidades': 'Skills',
       'perfil.experiencia': 'Experience',
@@ -488,6 +499,7 @@ const i18n = {
 
       /* Nacimiento detail */
       'nac.rol': 'Exhibition Designer',
+      'riev.rol': 'Visual Designer',
 
       /* Salud detail */
       'salud.rol': 'UX Lead',
@@ -621,11 +633,11 @@ const i18n = {
       'title.salud': 'Unified Health Insurance Experience',
       'title.atencion': 'Hybrid Care Strategy',
       'title.espacio': 'Interaction Manager',
-      'title.slot': 'Slot',
+      'title.slot': 'SLOT',
       'title.kanji': 'Kanji',
-      'title.riev': 'Riev',
+      'title.riev': 'RIEV',
       'title.yoc': 'yo.contenido',
-      'title.nac': 'Nacimiento',
+      'title.nac': 'NACIMIENTO',
     }
   },
 
